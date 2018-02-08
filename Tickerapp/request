@@ -1,0 +1,31 @@
+-<!doctype html>
+<html lang="en">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <ul>
+             <div class=page>
+                dfs_open=dfs.copy(deep=True)
+                dfs_close=dfs.copy(deep=True)
+                dfs_adj_open=dfs.copy(deep=True)
+                dfs_adj_close=dfs.copy(deep=True)
+                dfs_open=dfs_open.drop(dfs_open.columns[[3, 4, 5]], axis=1)
+                dfs_close=dfs_close.drop(dfs_close.columns[[2, 4, 5]], axis=1)
+                dfs_adj_open=dfs_adj_open.drop(dfs_adj_open.columns[[2, 3, 5]], axis=1)
+                dfs_adj_close=dfs_adj_close.drop(dfs_adj_close.columns[[2, 3, 4]], axis=1)  
+
+
+                names = [('Open Price', 'Open Price')]
+                ds_open = hv.Dataset(dfs_open, ['Date', 'Ticker'], names)
+                names = [('Close Price', 'Close Price')]
+                ds_close = hv.Dataset(dfs_close, ['Date', 'Ticker'], names)
+                names = [('Adj Open Price', 'Adj Open Price')]
+                ds_adj_open = hv.Dataset(dfs_adj_open, ['Date', 'Ticker'], names)
+                names = [('Adj Close Price', 'Adj Close Price')]
+                ds_adj_close = hv.Dataset(dfs_adj_close, ['Date', 'Ticker'], names)
+
+                %%opts Curve [width=800 height=550] {+framewise}
+                %%opts Curve (color='red' line_width=1.5)
+                ds_open.to(hv.Curve, 'Date','Open Price',label='Last month opening ticker prices')
