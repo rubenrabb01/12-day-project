@@ -1,0 +1,18 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[dev-packages]
+
+
+
+[packages]
+
+Flask = "==0.10.1"
+Flask-SQLAlchemy = "==1.0"
+Flask-WTF = "==0.9.3"
+gunicorn = "==19.3.0"
+requests = "==2.9.1"
