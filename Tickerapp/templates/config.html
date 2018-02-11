@@ -3,19 +3,21 @@
 <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
 
 <div class=page>
-  <h1><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"<h1>Stock ticker prices
-  <i style="font-size:24px" class="fa">&#xf1fe;</i>
+  <h1><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     <h1> Ticker Lookup App
+        
+        <i style="font-size:28px;color:grey" class="fa">&#xf1fe;</i>
        </h4>
-     Please select a stock ticker to display its last month prices
+     Please select a stock ticker to display its prices for the last month
      <form id='user' method='post' action='index' >
        <p>
-     Ticker: <input type='text' name='ticker' placeholder='A' />
+     Ticker: <input type='text' name='ticker' placeholder='CMCSA' />
        </p>
        <p>
-     <input type="checkbox" name='features' value='close' />Closing price<br>
-     <input type="checkbox" name='features' value='adj_close' />Adjusted closing price<br>
-     <input type="checkbox" name='features' value='open' />Opening price<br>
-     <input type="checkbox" name='features' value='adj_open' />Adjusted opening price<br>
+     <input type="checkbox" name='features' value='open'/>Opening price<br>
+     <input type="checkbox" name='features' value='close'/>Closing price<br>
+     <input type="checkbox" name='features' value='adj_open'/>Adjusted opening price<br>
+     <input type="checkbox" name='features' value='adj_close'/>Adjusted closing price<br>
        </p>
        <p>
      <input type="submit" value="Submit"/>
