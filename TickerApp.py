@@ -2,29 +2,10 @@ from flask import Flask, render_template, request, redirect
 import requests
 import pandas as pd
 import io
-import webbrowser
-import quandl
-import numpy as np
-import matplotlib.pyplot as plt
-import simplejson as json
-import urllib2
-import requests
-import ujson as json
 from bokeh.models import ColumnDataSource
 from bokeh.plotting import figure, show
-from bokeh.embed import components, file_html
+from bokeh.embed import components
 from bokeh.io import show
-from bokeh.resources import CDN
-from bokeh.models import ColumnDataSource
-from flask import Flask, render_template, request, redirect,flash, Markup, url_for
-from os.path import abspath, dirname, join
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.wtf import Form
-from wtforms import fields
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
-from matplotlib import cm
-import holoviews as hv
-hv.extension('bokeh', 'matplotlib')
 
 
 app = Flask(__name__)
@@ -32,9 +13,6 @@ app.vars={}
 feat = ['open','close','adj_open', 'adj_close']
 
 
-_cwd = dirname(abspath(__file__))
-app.config.from_object(__name__)
-db = SQLAlchemy(app)
 
 
 #@app.route('/plot',methods=['GET','POST'])
