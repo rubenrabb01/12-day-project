@@ -14,11 +14,6 @@ app.vars={}
 feat = ['open','close','adj_open', 'adj_close']
 
 
-_cwd = dirname(abspath(__file__))
-app.config.from_object(__name__)
-db = SQLAlchemy(app)
-
-
 #@app.route('/plot',methods=['GET','POST'])
 #def plot():
 #    quandl.ApiConfig.api_key = 'MhSyqwHb1N6rn5JiB7QF'
