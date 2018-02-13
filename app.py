@@ -64,11 +64,9 @@ feat = ['open','close','adj_open', 'adj_close']
 #print(app)
 
 
-@app.route('/')
-def main():
-    return redirect('/index')
 
-@app.route('/index',methods=['GET','POST'])
+
+@app.route('/',methods=['GET','POST'])
 def index():
     if request.method == 'GET':
         return render_template('config.html')
