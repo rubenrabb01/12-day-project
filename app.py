@@ -64,6 +64,9 @@ feat = ['open','close','adj_open', 'adj_close']
 #print(app)
 
 
+@app.route('/')
+def main():
+    return redirect('/index')
 
 @app.route('/index',methods=['GET','POST'])
 def index():
