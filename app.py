@@ -97,9 +97,9 @@ def plot():
     if 'close' in app.vars['select']:
         p.line('Date', 'Close', line_width=2, line_color="#FB8072",legend='Closing price',source = ColumnDataSource(dfs))
     if 'adj_open' in app.vars['select']:
-        p.line('Date', 'High', line_width=2,line_color='#58C44B',legend='Adjusted opening price',source = ColumnDataSource(dfs))
+        p.line('Date', 'Adj. Open', line_width=2,line_color='#58C44B',legend='Adjusted opening price',source = ColumnDataSource(dfs))
     if 'adj_close' in app.vars['select']:
-        p.line('Date','Low', line_width=2, line_color="#FAE116",legend='Adjusted closing price',source = ColumnDataSource(dfs))
+        p.line('Date','Adj. Close', line_width=2, line_color="#FAE116",legend='Adjusted closing price',source = ColumnDataSource(dfs))
     script, div = components(p)
     return render_template('plot.html', script=script, div=div)
 
