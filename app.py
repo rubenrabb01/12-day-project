@@ -63,9 +63,6 @@ feat = ['open','close','adj_open', 'adj_close']
 #app = renderer.app(p1)
 #print(app)
 
-
-
-
 @app.route('/')
 def main():
     return redirect('/index')
@@ -80,6 +77,7 @@ def index():
         app.vars['select'] = [feat[q] for q in range(4) if feat[q] in request.form.values()]
         return redirect('/plot')
 
+    
 @app.route('/plot',methods=['GET','POST'])
 def plot():
     urlData = requests.get('https://www.quandl.com/api/v3/datasets/WIKI/%s.csv?start_date=2018-01-08&end_date=2018-02-08'
