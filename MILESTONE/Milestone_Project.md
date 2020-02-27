@@ -1304,7 +1304,7 @@ plt.legend(loc='lower right')
 
 
 
-![png](MILESTONE/images/output_19_1.png)
+![png](/MILESTONE/images/output_19_1.png)
 
 
 
@@ -1938,7 +1938,7 @@ output.plot(x="date", y=["number", "response"],  figsize=(12, 8), kind="bar")
 
 
 
-![png](MILESTONE/images/output_32_1.png)
+![png](/MILESTONE/images/output_32_1.png)
 
 
 
@@ -3380,7 +3380,7 @@ dfjob.plot(x='year', y='jobless rate', figsize=(12, 7), kind='barh')
 
 
 
-![png](MILESTONE/images/output_49_1.png)
+![png](/MILESTONE/images/output_49_1.png)
 
 
 
@@ -18519,7 +18519,7 @@ out.plot.box(figsize=(8, 5))
 
 
 
-![png](MILESTONE/images/output_66_1.png)
+![png](/MILESTONE/images/output_66_1.png)
 
 
 
@@ -18537,7 +18537,7 @@ out.plot.bar(colormap='Greens',stacked=True, figsize=(11, 7),legend='top_right')
 
 
 
-![png](MILESTONE/images/output_67_1.png)
+![png](/MILESTONE/images/output_67_1.png)
 
 
 
@@ -20885,7 +20885,7 @@ mean.plot.bar(yerr=error, ax=ax)
 
 
 
-![png](MILESTONE/images/output_86_1.png)
+![png](/MILESTONE/images/output_86_1.png)
 
 
 
@@ -20901,7 +20901,7 @@ out.plot.area(stacked=False,figsize=(11, 8))
 
 
 
-![png](MILESTONE/images/output_87_1.png)
+![png](/MILESTONE/images/output_87_1.png)
 
 
 
@@ -20932,7 +20932,7 @@ out.plot(subplots=True, figsize=(10, 10))
 
 
 
-![png](MILESTONE/images/output_88_1.png)
+![png](/MILESTONE/images/output_88_1.png)
 
 
 
@@ -20953,7 +20953,7 @@ out.plot(colormap=cm.cubehelix,figsize=(12, 7))
 
 
 
-![png](MILESTONE/images/output_89_2.png)
+![png](/MILESTONE/images/output_89_2.png)
 
 
 
@@ -24157,7 +24157,7 @@ outg.plot(x='date', y='close', figsize=(12, 7), kind='line')
 
 
 
-![png](MILESTONE/images/output_103_1.png)
+![png](/MILESTONE/images/output_103_1.png)
 
 
 
