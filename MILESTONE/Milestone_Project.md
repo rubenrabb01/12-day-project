@@ -1,10 +1,9 @@
 
-
 ```python
 #################################################################################################################################
 ################################################ MILESTONE PROJECT - PART 1 ######################################################
 
-#1. Create Pandas dataframes 
+#1. Create Pandas dataframes
 #2. Manipulate data (indexing, selection, variable dtypes)conca
 
 #3. Plot data (Matplotlib, Bokeh)
@@ -13,7 +12,7 @@
 
 
 ```python
-#Load all libraries that will be used in this project 
+#Load all libraries that will be used in this project
 
 %matplotlib inline
 import matplotlib
@@ -24,7 +23,7 @@ matplotlib.rcParams['savefig.dpi'] = 144
 
 ```python
 import pandas as pd
-import json 
+import json
 from io import StringIO
 import io
 import csv
@@ -661,7 +660,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 
   <img src='data:image/png;base64,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'
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
   <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -716,7 +715,7 @@ mhrfO3fufECS5GHXnf8pAAAAHMfdURTdimGYPjExsTo0NHTyj2ynEplMxurs7HyHIAiKJMlSHMct
 U9k9N2vl5+cH0en0TRiGWX18fC65vnh+LxqNBq2oqFhgMpmi7XY7arVaj+zdu/fxn/l/4bSZl5fH
 5nK5CQAQMtXznCRJePpEbwOAZhzHX4ix/wHzzC/tu64gcwAAAABJRU5ErkJggg=='
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
 </div>
@@ -887,7 +886,7 @@ df1['date'] = date
 
 
 ```python
-#Sort by'number' values 
+#Sort by'number' values
 
 df1.sort_values('number').head(11)
 ```
@@ -1305,14 +1304,14 @@ plt.legend(loc='lower right')
 
 
 
-![png](output_19_1.png)
+![png](MILESTONE/images/output_19_1.png)
 
 
 
 ```python
 #Use Bokeh to create an interactive plot of the temporal trend
 
-output_notebook()  
+output_notebook()
 TOOLS = "pan, box_zoom, wheel_zoom, reset, save"
 
 p = figure(tools=TOOLS,title="Temporal trend", plot_height=300, plot_width=600, y_range=(15,20),x_axis_label="date")
@@ -1571,7 +1570,7 @@ df3['date'] = date
 dfs = [df1, df2, df3]
 output = pd.concat(dfs)
 
-#Also, can use merge to combine the three dataframes  
+#Also, can use merge to combine the three dataframes
 #output_join= output.merge(output, on='date', how='left')
 #output_join.head(33)
 ```
@@ -1585,7 +1584,7 @@ output[['number']] = output[['number']].astype('float')
 output[['date']] = output[['date']].astype('int')
 
 #Convert "response" variable to boolean True/False
-output[['response']] = output[['response']].astype('bool') 
+output[['response']] = output[['response']].astype('bool')
 ```
 
 
@@ -1841,7 +1840,7 @@ output['number'].describe()
 ```
 
     Numbers between 2005 and 2015
-    
+
 
 
 
@@ -1939,7 +1938,7 @@ output.plot(x="date", y=["number", "response"],  figsize=(12, 8), kind="bar")
 
 
 
-![png](output_32_1.png)
+![png](MILESTONE/images/output_32_1.png)
 
 
 
@@ -2223,7 +2222,7 @@ output
 #################################################################################################################################
 ################################################ MILESTONE PROJECT - PART 2 ######################################################
 
-#1. Request data from public API using request and simplejson libraries 
+#1. Request data from public API using request and simplejson libraries
 #2. Convert jSon data to Pandas dataframe
 #3. Create table and plotting data (Bokeh, Holoviews)
 
@@ -2241,7 +2240,7 @@ matplotlib.rcParams['savefig.dpi'] = 144
 
 ```python
 import pandas as pd
-import json 
+import json
 from io import StringIO
 import io
 import csv
@@ -2874,7 +2873,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 
   <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK6wAACusBgosNWgAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAf9SURBVFiFvZh7cFTVHcc/59y7793sJiFAwkvAYDRqFWwdraLVlj61diRYsDjqCFbFKrYo0CltlSq1tLaC2GprGIriGwqjFu10OlrGv8RiK/IICYECSWBDkt3s695zTv9IAtlHeOn0O7Mzu797z+/3Ob/z+p0VfBq9doNFljuABwAXw2PcvGHt6bgwxhz7Ls4YZNVXxxANLENwE2D1W9PAGmAhszZ0/X9gll5yCbHoOirLzmaQs0F6F8QMZq1v/8xgNm7DYwwjgXJLYL4witQ16+sv/U9HdDmV4WrKw6B06cZC/RMrM4MZ7xz61DAbtzEXmAvUAX4pMOVecg9/MFFu3j3Gz7gQBLygS2RGumBkL0cubiFRsR3LzVBV1UMk3IrW73PT9C2lYOwhQB4ClhX1AuKpjLcV27oEjyUpNUJCg1CvcejykWTCXyQgzic2HIIBjg3pS6+uRLKAhumZvD4U+tq0jTrgkVKQQtLekfTtxIPAkhTNF6G7kZm7aPp6M9myKVQEoaYaIhEQYvD781DML/RfBGNZXAl4irJiwBa07e/y7cQnBaJghIX6ENl2GR/fGCBoz6cm5qeyEqQA5ZYA5x5eeiV0Qph4gjFAUSwAr6QllQgcxS/Jm25Cr2Tmpsk03XI9NfI31FTZBEOgVOk51adqDBNPCNPSRlkiDXbBEwOU2WxH+I7itQZ62g56OjM33suq1YsZHVtGZSUI2QdyYgkgOthQNIF7BIGDnRAJgJSgj69cUx1gB8PkOGwL4E1gPrM27gIg7NlGKLQApc7BmEnAxP5g/rw4YqBrCDB5xHkw5rdR/1qTrN/hKNo6YUwVDNpFsnjYS8RbidBPcPXFP6R6yfExuOXmN4A3jv1+8ZUwgY9D2OWjUZE6lO88jDwHI8ZixGiMKSeYTBamCoDk6kDAb6y1OcH1a6KpD/fZesoFw5FlIXAVCIiH4PxrV+p2npVDToTBmtjY8t1swh2V61E9KqWiyuPEjM8dbfxuvfa49Zayf9R136Wr8mBSf/T7bNteA8zwaGEUbFpckWwq95n59dUIywKl2fbOIS5e8bWSu0tJ1a5redAYfqkdjesodFajcgaVNWhXo1C9SrkN3Usmv3UMJrc6/DDwkwEntkEJLe67tSLhvyzK8rHDQWleve5CGk4VZEB1r+5bg2E2si+Y0QatDK6jUVkX5eg2YYlp++ZM+rfMNYamAj8Y7MAVWFqaR1f/t2xzU4IHjybBtthzuiAASqv7jTF7jOqDMAakFHgDNsFyP+FhwZHBmH9F7cutIYkQCylYYv1AZSqsn1/+bX51OMMjPSl2nAnM7hnjOx2v53YgNWAzHM9Q/9l0lQWPSCBSyokAtOBC1Rj+w/1Xs+STDp4/E5g7Rs2zm2+oeVd7PUuHKDf6A4r5EsPT5K3gfCnBXNUYnvGzb+KcCczYYWOnLpy4eOXuG2oec0PBN8XQQAnpvS35AvAykr56rWhPBiV4MvtceGLxk5Mr6A1O8IfK7rl7xJ0r9kyumuP4fa0lMqTBLJIAJqEf1J3qE92lMBndlyfRD2YBghHC4hlny7ASqCeWo5zaoDdIWfnIefNGTb9fC73QDfhyBUCNOxrGPSUBfPem9us253YTV+3mcBbdkUYfzmHiLqZbYdIGHHON2ZlemXouaJUOO6TqtdHEQuXYY8Yt+EbDgmlS6RdzkaDTv2P9A3gICiq93sWhb5mc5wVhuU3Y7m5hOc3So7qFT3SLgOXHb/cyOfMn7xROegoC/PTcn3v8gbKPgDopJFk3R/uBPWQiwQ+2/GJevRMObLUzqe/saJjQUQTTftEVMW9tWxPgAocwcj9abNcZe7s+6t2R2xXZG7zyYLp8Q1PiRBBHym5bYuXi8Qt+/LvGu9f/5YDAxABsaRNPH6Xr4D4Sk87a897SOy9v/fKwjoF2eQel95yDESGEF6gEMwKhLwKus3wOVjTtes7qzgLdXTMnNCNoEpbcrtNuq6N7Xh/+eqcbj94xQkp7mdKpW5XbtbR8Z26kgMCAf2UU5YEovRUVRHbu2b3vK1UdDFkDCyMRQxbpdv8nhKAGIa7QaQedzT07fFPny53R738JoVYBdVrnsNx9XZ9v33UeGO+AA2MMUkgqQ5UcdDLZSFeVgONnXeHqSAC5Ew1BXwko0D1Zct3dT1duOjS3MzZnEUJtBuoQAq3SGOLR4ekjn9NC5nVOaYXf9lETrUkmOJy3pOz8OKIb2A1cWhJCCEzOxU2mUPror+2/L3yyM3pkM7jTjr1nBOgkGeyQ7erxpdJsMAS9wb2F9rzMxNY1K2PMU0WtZV82VU8Wp6vbKJVo9Lx/+4cydORdxCCQ/kDGTZCWsRpLu7VD7bfKqL8V2orKTp/PtzaXy42jr6TwAuisi+7JolUG4wY+8vyrISCMtRrLKWpvjAOqx/QGhp0rjRo5xD3x98CWQuOQN8qumRMmI7jKZPUEpzNVZsj4Zbaq1to5tZZsKIydLWojhIXrJnES79EaOzv3du2NytKuxzJKAA6wF8xqEE8s2jo/1wd/khslQGxd81Zg62Bbp31XBH+iETt7Y3ELA0iU6iGDlQ5mexe0VEx4a3x8V1AaYwFJgTiwaOsDmeK2J8nMUOqsnB1A+dcA04ucCYt0urkjmflk9iT2v30q/gZn5rQPvor4n9Ou634PeBzoznes/iot/7WnClKoM/+zCIjH5kwT8ChQjTHPIPTjFV3PpU/Hx+DM/A9U3IXI4SPCYAAAAABJRU5ErkJggg=='
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
   <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -2929,7 +2928,7 @@ mhrfO3fufECS5GHXnf8pAAAAHMfdURTdimGYPjExsTo0NHTyj2ynEplMxurs7HyHIAiKJMlSHMct
 U9k9N2vl5+cH0en0TRiGWX18fC65vnh+LxqNBq2oqFhgMpmi7XY7arVaj+zdu/fxn/l/4bSZl5fH
 5nK5CQAQMtXznCRJePpEbwOAZhzHX4ix/wHzzC/tu64gcwAAAABJRU5ErkJggg=='
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
 </div>
@@ -3061,7 +3060,7 @@ print(r.content)
             ]
         }
     ]
-    
+
 
 
 ```python
@@ -3072,7 +3071,7 @@ print(data)
 
     <type 'list'>
     [{u'countryName': u'USA', u'countryCode': u'us', u'jobless_rate': [{u'data': u'6.20', u'year': u'2014'}, {u'data': u'7.40', u'year': u'2013'}, {u'data': u'8.20', u'year': u'2012'}, {u'data': u'9.00', u'year': u'2011'}, {u'data': u'9.70', u'year': u'2010'}, {u'data': u'9.40', u'year': u'2009'}, {u'data': u'5.90', u'year': u'2008'}, {u'data': u'4.70', u'year': u'2007'}, {u'data': u'4.70', u'year': u'2006'}, {u'data': u'5.20', u'year': u'2005'}, {u'data': u'5.60', u'year': u'2004'}, {u'data': u'6.10', u'year': u'2003'}, {u'data': u'5.90', u'year': u'2002'}, {u'data': u'4.80', u'year': u'2001'}, {u'data': u'4.10', u'year': u'2000'}, {u'data': u'4.30', u'year': u'1999'}, {u'data': u'4.60', u'year': u'1998'}, {u'data': u'5.00', u'year': u'1997'}, {u'data': u'5.50', u'year': u'1996'}, {u'data': u'5.70', u'year': u'1995'}, {u'data': u'6.20', u'year': u'1994'}, {u'data': u'7.00', u'year': u'1993'}, {u'data': u'7.60', u'year': u'1992'}, {u'data': u'6.90', u'year': u'1991'}]}]
-    
+
 
 
 ```python
@@ -3082,7 +3081,7 @@ print(r.headers["content-type"])
 
     {'Content-Length': '258', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Keep-Alive': 'timeout=4, max=500', 'Server': 'Apache/2.4', 'Connection': 'Keep-Alive', 'Date': 'Sat, 03 Feb 2018 23:34:44 GMT', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8'}
     application/json; charset=utf-8
-    
+
 
 
 ```python
@@ -3106,7 +3105,7 @@ data
 
 
 ```python
-#Convert from json format to Python dict and limit variable field  
+#Convert from json format to Python dict and limit variable field
 
 job=json.loads(data)
 job=json.loads(data)[0]['jobless_rate']
@@ -3145,7 +3144,7 @@ job
 
 
 ```python
-#Export data into a dataframe and print basic numbers 
+#Export data into a dataframe and print basic numbers
 
 data = pd.DataFrame(job)
 data
@@ -3210,7 +3209,7 @@ data.describe()
 
 dfjob=data[['data', 'year']].head(23)
 dfjob.columns
-dfjob.columns.values[0] = 'jobless rate' 
+dfjob.columns.values[0] = 'jobless rate'
 dfjob
 ```
 
@@ -3370,7 +3369,7 @@ dfjob=dfjob.astype(float)
 
 
 ```python
-dfjob.plot(x='year', y='jobless rate', figsize=(12, 7), kind='barh') 
+dfjob.plot(x='year', y='jobless rate', figsize=(12, 7), kind='barh')
 ```
 
 
@@ -3381,12 +3380,12 @@ dfjob.plot(x='year', y='jobless rate', figsize=(12, 7), kind='barh')
 
 
 
-![png](output_49_1.png)
+![png](MILESTONE/images/output_49_1.png)
 
 
 
 ```python
-#Export data and create hv table 
+#Export data and create hv table
 
 table = hv.Table(dfjob, 'year', 'jobless rate')
 table
@@ -3403,7 +3402,7 @@ table
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"fbe32507-206b-4f29-b60b-b733e3f0fb85":{"roots":{"references":[{"attributes":{},"id":"844ebea6-787e-4ed6-88bf-138f83cd03c2","type":"StringEditor"},{"attributes":{},"id":"dc5fda9d-6657-4e7c-b530-2f7d50c03f62","type":"StringFormatter"},{"attributes":{"editor":{"id":"a2f43654-52b1-4dc9-a500-543045c000d5","type":"StringEditor"},"field":"year","formatter":{"id":"dc5fda9d-6657-4e7c-b530-2f7d50c03f62","type":"StringFormatter"},"title":"year"},"id":"bb2abfd2-8aa3-4428-9291-a24f6bca5f92","type":"TableColumn"},{"attributes":{},"id":"a2f43654-52b1-4dc9-a500-543045c000d5","type":"StringEditor"},{"attributes":{"source":{"id":"9b18ac84-9418-4682-a131-9cd605ab2948","type":"ColumnDataSource"}},"id":"0e0af664-5074-4480-a5a8-726a750cea4d","type":"CDSView"},{"attributes":{"callback":null,"column_names":["jobless rate","year"],"data":{"jobless rate":{"__ndarray__":"zczMzMzMGECamZmZmZkdQGZmZmZmZiBAAAAAAAAAIkBmZmZmZmYjQM3MzMzMzCJAmpmZmZmZF0DNzMzMzMwSQM3MzMzMzBJAzczMzMzMFEBmZmZmZmYWQGZmZmZmZhhAmpmZmZmZF0AzMzMzMzMTQGZmZmZmZhBAMzMzMzMzEUBmZmZmZmYSQAAAAAAAABRAAAAAAAAAFkDNzMzMzMwWQM3MzMzMzBhAAAAAAAAAHEBmZmZmZmYeQA==","dtype":"float64","shape":[23]},"year":{"__ndarray__":"AAAAAAB4n0AAAAAAAHSfQAAAAAAAcJ9AAAAAAABsn0AAAAAAAGifQAAAAAAAZJ9AAAAAAABgn0AAAAAAAFyfQAAAAAAAWJ9AAAAAAABUn0AAAAAAAFCfQAAAAAAATJ9AAAAAAABIn0AAAAAAAESfQAAAAAAAQJ9AAAAAAAA8n0AAAAAAADifQAAAAAAANJ9AAAAAAAAwn0AAAAAAACyfQAAAAAAAKJ9AAAAAAAAkn0AAAAAAACCfQA==","dtype":"float64","shape":[23]}}},"id":"9b18ac84-9418-4682-a131-9cd605ab2948","type":"ColumnDataSource"},{"attributes":{},"id":"512b98f5-03a3-45ed-a9e4-a6ebb68aa45a","type":"StringFormatter"},{"attributes":{"columns":[{"id":"bb2abfd2-8aa3-4428-9291-a24f6bca5f92","type":"TableColumn"},{"id":"fc2d0847-8bba-47a8-95c8-62e5031bec6f","type":"TableColumn"}],"height":300,"reorderable":false,"source":{"id":"9b18ac84-9418-4682-a131-9cd605ab2948","type":"ColumnDataSource"},"view":{"id":"0e0af664-5074-4480-a5a8-726a750cea4d","type":"CDSView"},"width":400},"id":"a8cb2a75-25a7-4d7b-ae85-093fab156b8a","type":"DataTable"},{"attributes":{"editor":{"id":"844ebea6-787e-4ed6-88bf-138f83cd03c2","type":"StringEditor"},"field":"jobless rate","formatter":{"id":"512b98f5-03a3-45ed-a9e4-a6ebb68aa45a","type":"StringFormatter"},"title":"jobless rate"},"id":"fc2d0847-8bba-47a8-95c8-62e5031bec6f","type":"TableColumn"}],"root_ids":["a8cb2a75-25a7-4d7b-ae85-093fab156b8a"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"fbe32507-206b-4f29-b60b-b733e3f0fb85","elementid":"79f09ccc-2da8-4347-bdd0-d418e121d63a","modelid":"a8cb2a75-25a7-4d7b-ae85-093fab156b8a"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -3449,7 +3448,7 @@ hv.Curve(table) + hv.Bars(table)
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"2cd40ee3-b36c-40ba-8c66-1c049175de10":{"roots":{"references":[{"attributes":{},"id":"a5aa2fca-6466-46b7-9b8e-79e500e5bba5","type":"ResetTool"},{"attributes":{"axis_label":"jobless rate","bounds":"auto","formatter":{"id":"d789319d-3c54-4623-bbc2-c04e2c9e8636","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"},"ticker":{"id":"14c974d0-7018-424d-b0cc-e00ae1c2a593","type":"BasicTicker"}},"id":"3de56ccb-9ba8-4621-8abe-136b0e961180","type":"LinearAxis"},{"attributes":{},"id":"14c974d0-7018-424d-b0cc-e00ae1c2a593","type":"BasicTicker"},{"attributes":{"toolbar":{"id":"c7eebb77-331c-4545-b26b-1ac69e79fa8b","type":"ProxyToolbar"},"toolbar_location":"above"},"id":"0a211ee8-11f2-4d05-9454-98275c9cf64e","type":"ToolbarBox"},{"attributes":{},"id":"92ae14dc-291f-447d-bf84-4ea36c46e20f","type":"ResetTool"},{"attributes":{"overlay":{"id":"08f12633-2819-49bf-aeca-55b221b2a29a","type":"BoxAnnotation"}},"id":"d8e91f40-ee3c-44d3-95b3-a0e7e3aa9270","type":"BoxZoomTool"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"b99c2a7e-40da-4a1f-a9d6-a72fc877bbeb","type":"LinearAxis"}],"left":[{"id":"87ab3bc5-2e59-4352-a0d6-d653eb9eed58","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":300,"plot_width":300,"renderers":[{"id":"b99c2a7e-40da-4a1f-a9d6-a72fc877bbeb","type":"LinearAxis"},{"id":"75424002-0964-4442-b7b6-94ab5685f184","type":"Grid"},{"id":"87ab3bc5-2e59-4352-a0d6-d653eb9eed58","type":"LinearAxis"},{"id":"47194b83-0ab4-4793-9637-081cab6f463c","type":"Grid"},{"id":"3dddf5c2-de5b-41e7-8cab-33468582a407","type":"BoxAnnotation"},{"id":"426e493b-e9c3-4980-af05-f09adb7e880f","type":"GlyphRenderer"}],"title":{"id":"5f3d1628-eda7-4c92-b5b0-3e11ce1aaf8f","type":"Title"},"toolbar":{"id":"652795ae-07a6-46a3-8cc8-15f1e2b43f89","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"e70604cb-5195-491f-a603-5c36827a0099","type":"Range1d"},"x_scale":{"id":"1589f9a2-4cf7-4d0c-b024-cffeafa0583e","type":"LinearScale"},"y_range":{"id":"00957d9e-cbb8-49a6-97a0-3ffca4f8a974","type":"Range1d"},"y_scale":{"id":"d5930f8a-ace3-41ab-88a3-ead0e93624ba","type":"LinearScale"}},"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":0.1,"line_color":"#30a2da","line_width":2,"x":{"field":"year"},"y":{"field":"jobless rate"}},"id":"2c440dba-3ba3-490a-baf7-f4806f59db48","type":"Line"},{"attributes":{},"id":"bdfb82b0-6573-4ce3-a707-7e8be939f3db","type":"CategoricalScale"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"50ed37fc-365f-4c9c-8aab-0f9b7a320b07","type":"Title"},{"attributes":{"children":[{"id":"0a211ee8-11f2-4d05-9454-98275c9cf64e","type":"ToolbarBox"},{"id":"22325673-528b-4b07-91b1-ab87b04d01b4","type":"Column"}]},"id":"f31b25b8-9038-45ed-8953-d9d3a65741d8","type":"Column"},{"attributes":{"axis_label":"jobless rate","bounds":"auto","formatter":{"id":"32942be8-0050-4f7d-8cff-d1be62b14070","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fbc0361-d3a5-4756-bae6-3c9fcc596960","type":"BasicTicker"}},"id":"87ab3bc5-2e59-4352-a0d6-d653eb9eed58","type":"LinearAxis"},{"attributes":{},"id":"1e85e4b5-03b0-4847-9c70-651b2599348b","type":"SaveTool"},{"attributes":{"data_source":{"id":"8146b45d-3c9b-477c-b1a9-f3e456055a4a","type":"ColumnDataSource"},"glyph":{"id":"f844e221-14e0-4460-b253-adc257ddc8ce","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"65810800-414a-4e4f-8439-703a5f6238dc","type":"VBar"},"selection_glyph":null,"view":{"id":"24c9dff4-c6f2-4295-a307-f47a8148b216","type":"CDSView"}},"id":"d613d55e-47fd-4811-a1c7-512af997c8e8","type":"GlyphRenderer"},{"attributes":{},"id":"32942be8-0050-4f7d-8cff-d1be62b14070","type":"BasicTickFormatter"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"},"ticker":{"id":"b250fc2a-3c3b-4a32-9994-0a1cf15bb4a7","type":"CategoricalTicker"}},"id":"55abe363-5ba3-43ad-b828-24c9e9b5f61d","type":"Grid"},{"attributes":{"line_color":"#30a2da","line_width":2,"x":{"field":"year"},"y":{"field":"jobless rate"}},"id":"3e295c48-51a2-4ca5-be4a-d067359ff193","type":"Line"},{"attributes":{},"id":"2fbc0361-d3a5-4756-bae6-3c9fcc596960","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["2014","2013","2012","2011","2010","2009","2008","2007","2006","2005","2004","2003","2002","2001","2000","1999","1998","1997","1996","1995","1994","1993","1992"]},"id":"984d166d-2954-425c-a1c8-4f8e18df210c","type":"FactorRange"},{"attributes":{"data_source":{"id":"108ce991-f64e-4de7-aae7-9210d379519c","type":"ColumnDataSource"},"glyph":{"id":"3e295c48-51a2-4ca5-be4a-d067359ff193","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"2fb5d06a-95d9-4f84-a0f0-8eee50eb6ea6","type":"Line"},"nonselection_glyph":{"id":"2c440dba-3ba3-490a-baf7-f4806f59db48","type":"Line"},"selection_glyph":null,"view":{"id":"1aef9c02-f4ac-4a7f-bd02-57a6b198e8ad","type":"CDSView"}},"id":"426e493b-e9c3-4980-af05-f09adb7e880f","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#30a2da"},"line_alpha":{"value":0.1},"line_color":{"value":"#000000"},"top":{"field":"jobless_rate"},"width":{"value":0.8},"x":{"field":"year"}},"id":"65810800-414a-4e4f-8439-703a5f6238dc","type":"VBar"},{"attributes":{},"id":"24b8fb59-b583-4f68-be5d-40e78b4c8249","type":"PanTool"},{"attributes":{"fill_color":{"value":"#30a2da"},"line_color":{"value":"#000000"},"top":{"field":"jobless_rate"},"width":{"value":0.8},"x":{"field":"year"}},"id":"f844e221-14e0-4460-b253-adc257ddc8ce","type":"VBar"},{"attributes":{},"id":"fafa6830-cbab-4489-8615-a86ebb797953","type":"PanTool"},{"attributes":{},"id":"56f18be3-a1f6-4f01-abd3-b026008f0ae0","type":"WheelZoomTool"},{"attributes":{"callback":null,"column_names":["jobless rate","year"],"data":{"jobless rate":{"__ndarray__":"zczMzMzMGECamZmZmZkdQGZmZmZmZiBAAAAAAAAAIkBmZmZmZmYjQM3MzMzMzCJAmpmZmZmZF0DNzMzMzMwSQM3MzMzMzBJAzczMzMzMFEBmZmZmZmYWQGZmZmZmZhhAmpmZmZmZF0AzMzMzMzMTQGZmZmZmZhBAMzMzMzMzEUBmZmZmZmYSQAAAAAAAABRAAAAAAAAAFkDNzMzMzMwWQM3MzMzMzBhAAAAAAAAAHEBmZmZmZmYeQA==","dtype":"float64","shape":[23]},"year":{"__ndarray__":"AAAAAAB4n0AAAAAAAHSfQAAAAAAAcJ9AAAAAAABsn0AAAAAAAGifQAAAAAAAZJ9AAAAAAABgn0AAAAAAAFyfQAAAAAAAWJ9AAAAAAABUn0AAAAAAAFCfQAAAAAAATJ9AAAAAAABIn0AAAAAAAESfQAAAAAAAQJ9AAAAAAAA8n0AAAAAAADifQAAAAAAANJ9AAAAAAAAwn0AAAAAAACyfQAAAAAAAKJ9AAAAAAAAkn0AAAAAAACCfQA==","dtype":"float64","shape":[23]}}},"id":"108ce991-f64e-4de7-aae7-9210d379519c","type":"ColumnDataSource"},{"attributes":{"callback":null,"end":9.7,"start":0.0},"id":"00957d9e-cbb8-49a6-97a0-3ffca4f8a974","type":"Range1d"},{"attributes":{"source":{"id":"108ce991-f64e-4de7-aae7-9210d379519c","type":"ColumnDataSource"}},"id":"1aef9c02-f4ac-4a7f-bd02-57a6b198e8ad","type":"CDSView"},{"attributes":{},"id":"dff05ea5-ca57-4d22-b3d3-3a8673c8dd98","type":"WheelZoomTool"},{"attributes":{"children":[{"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},{"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"}]},"id":"8be9b300-571f-463b-b70e-af8b3efb22e9","type":"Row"},{"attributes":{"line_alpha":0.2,"line_color":"#30a2da","line_width":2,"x":{"field":"year"},"y":{"field":"jobless rate"}},"id":"2fb5d06a-95d9-4f84-a0f0-8eee50eb6ea6","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1e85e4b5-03b0-4847-9c70-651b2599348b","type":"SaveTool"},{"id":"fafa6830-cbab-4489-8615-a86ebb797953","type":"PanTool"},{"id":"56f18be3-a1f6-4f01-abd3-b026008f0ae0","type":"WheelZoomTool"},{"id":"fc735677-f56f-47de-ba14-d6639317da40","type":"BoxZoomTool"},{"id":"92ae14dc-291f-447d-bf84-4ea36c46e20f","type":"ResetTool"}]},"id":"652795ae-07a6-46a3-8cc8-15f1e2b43f89","type":"Toolbar"},{"attributes":{"callback":null,"column_names":["year","jobless_rate"],"data":{"jobless_rate":{"__ndarray__":"zczMzMzMGECamZmZmZkdQGZmZmZmZiBAAAAAAAAAIkBmZmZmZmYjQM3MzMzMzCJAmpmZmZmZF0DNzMzMzMwSQM3MzMzMzBJAzczMzMzMFEBmZmZmZmYWQGZmZmZmZhhAmpmZmZmZF0AzMzMzMzMTQGZmZmZmZhBAMzMzMzMzEUBmZmZmZmYSQAAAAAAAABRAAAAAAAAAFkDNzMzMzMwWQM3MzMzMzBhAAAAAAAAAHEBmZmZmZmYeQA==","dtype":"float64","shape":[23]},"year":["2014","2013","2012","2011","2010","2009","2008","2007","2006","2005","2004","2003","2002","2001","2000","1999","1998","1997","1996","1995","1994","1993","1992"]}},"id":"8146b45d-3c9b-477c-b1a9-f3e456055a4a","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"08f12633-2819-49bf-aeca-55b221b2a29a","type":"BoxAnnotation"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},"ticker":{"id":"2fbc0361-d3a5-4756-bae6-3c9fcc596960","type":"BasicTicker"}},"id":"47194b83-0ab4-4793-9637-081cab6f463c","type":"Grid"},{"attributes":{"source":{"id":"8146b45d-3c9b-477c-b1a9-f3e456055a4a","type":"ColumnDataSource"}},"id":"24c9dff4-c6f2-4295-a307-f47a8148b216","type":"CDSView"},{"attributes":{"callback":null,"end":2014.0,"start":1992.0},"id":"e70604cb-5195-491f-a603-5c36827a0099","type":"Range1d"},{"attributes":{"tools":[{"id":"1e85e4b5-03b0-4847-9c70-651b2599348b","type":"SaveTool"},{"id":"fafa6830-cbab-4489-8615-a86ebb797953","type":"PanTool"},{"id":"56f18be3-a1f6-4f01-abd3-b026008f0ae0","type":"WheelZoomTool"},{"id":"fc735677-f56f-47de-ba14-d6639317da40","type":"BoxZoomTool"},{"id":"92ae14dc-291f-447d-bf84-4ea36c46e20f","type":"ResetTool"},{"id":"fd945d2d-2575-4312-95a7-3c0df39f5665","type":"SaveTool"},{"id":"24b8fb59-b583-4f68-be5d-40e78b4c8249","type":"PanTool"},{"id":"dff05ea5-ca57-4d22-b3d3-3a8673c8dd98","type":"WheelZoomTool"},{"id":"d8e91f40-ee3c-44d3-95b3-a0e7e3aa9270","type":"BoxZoomTool"},{"id":"a5aa2fca-6466-46b7-9b8e-79e500e5bba5","type":"ResetTool"}]},"id":"c7eebb77-331c-4545-b26b-1ac69e79fa8b","type":"ProxyToolbar"},{"attributes":{"axis_label":"year","bounds":"auto","formatter":{"id":"08461bc6-e9c7-4ac5-9a12-d7be827c2c30","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"},"ticker":{"id":"b250fc2a-3c3b-4a32-9994-0a1cf15bb4a7","type":"CategoricalTicker"}},"id":"62dbaba9-c3cc-44fd-9748-6f3a4eae5bc7","type":"CategoricalAxis"},{"attributes":{},"id":"d5930f8a-ace3-41ab-88a3-ead0e93624ba","type":"LinearScale"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},"ticker":{"id":"65388074-15e0-42b4-807a-478dd2838cc7","type":"BasicTicker"}},"id":"75424002-0964-4442-b7b6-94ab5685f184","type":"Grid"},{"attributes":{},"id":"946159cd-b37a-4e08-a397-b20cef2874af","type":"LinearScale"},{"attributes":{},"id":"d789319d-3c54-4623-bbc2-c04e2c9e8636","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"3dddf5c2-de5b-41e7-8cab-33468582a407","type":"BoxAnnotation"}},"id":"fc735677-f56f-47de-ba14-d6639317da40","type":"BoxZoomTool"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"},"ticker":{"id":"14c974d0-7018-424d-b0cc-e00ae1c2a593","type":"BasicTicker"}},"id":"4deb2344-4a9e-4da1-b179-69dc7c2396a4","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"3dddf5c2-de5b-41e7-8cab-33468582a407","type":"BoxAnnotation"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"62dbaba9-c3cc-44fd-9748-6f3a4eae5bc7","type":"CategoricalAxis"}],"left":[{"id":"3de56ccb-9ba8-4621-8abe-136b0e961180","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":300,"plot_width":300,"renderers":[{"id":"62dbaba9-c3cc-44fd-9748-6f3a4eae5bc7","type":"CategoricalAxis"},{"id":"55abe363-5ba3-43ad-b828-24c9e9b5f61d","type":"Grid"},{"id":"3de56ccb-9ba8-4621-8abe-136b0e961180","type":"LinearAxis"},{"id":"4deb2344-4a9e-4da1-b179-69dc7c2396a4","type":"Grid"},{"id":"08f12633-2819-49bf-aeca-55b221b2a29a","type":"BoxAnnotation"},{"id":"d613d55e-47fd-4811-a1c7-512af997c8e8","type":"GlyphRenderer"}],"title":{"id":"50ed37fc-365f-4c9c-8aab-0f9b7a320b07","type":"Title"},"toolbar":{"id":"15618623-eb10-4eb2-8554-444d7b6a3d63","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"984d166d-2954-425c-a1c8-4f8e18df210c","type":"FactorRange"},"x_scale":{"id":"bdfb82b0-6573-4ce3-a707-7e8be939f3db","type":"CategoricalScale"},"y_range":{"id":"00957d9e-cbb8-49a6-97a0-3ffca4f8a974","type":"Range1d"},"y_scale":{"id":"946159cd-b37a-4e08-a397-b20cef2874af","type":"LinearScale"}},"id":"7fd6d504-07ab-4e61-a247-d11d531afef8","subtype":"Figure","type":"Plot"},{"attributes":{"children":[{"id":"8be9b300-571f-463b-b70e-af8b3efb22e9","type":"Row"}]},"id":"22325673-528b-4b07-91b1-ab87b04d01b4","type":"Column"},{"attributes":{},"id":"c67abd55-5161-4ae2-9009-6278381795f0","type":"BasicTickFormatter"},{"attributes":{"axis_label":"year","bounds":"auto","formatter":{"id":"c67abd55-5161-4ae2-9009-6278381795f0","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"0ee4afe8-92a5-43ee-854e-caf2d7143b49","subtype":"Figure","type":"Plot"},"ticker":{"id":"65388074-15e0-42b4-807a-478dd2838cc7","type":"BasicTicker"}},"id":"b99c2a7e-40da-4a1f-a9d6-a72fc877bbeb","type":"LinearAxis"},{"attributes":{},"id":"fd945d2d-2575-4312-95a7-3c0df39f5665","type":"SaveTool"},{"attributes":{},"id":"08461bc6-e9c7-4ac5-9a12-d7be827c2c30","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1589f9a2-4cf7-4d0c-b024-cffeafa0583e","type":"LinearScale"},{"attributes":{},"id":"b250fc2a-3c3b-4a32-9994-0a1cf15bb4a7","type":"CategoricalTicker"},{"attributes":{},"id":"65388074-15e0-42b4-807a-478dd2838cc7","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"fd945d2d-2575-4312-95a7-3c0df39f5665","type":"SaveTool"},{"id":"24b8fb59-b583-4f68-be5d-40e78b4c8249","type":"PanTool"},{"id":"dff05ea5-ca57-4d22-b3d3-3a8673c8dd98","type":"WheelZoomTool"},{"id":"d8e91f40-ee3c-44d3-95b3-a0e7e3aa9270","type":"BoxZoomTool"},{"id":"a5aa2fca-6466-46b7-9b8e-79e500e5bba5","type":"ResetTool"}]},"id":"15618623-eb10-4eb2-8554-444d7b6a3d63","type":"Toolbar"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"5f3d1628-eda7-4c92-b5b0-3e11ce1aaf8f","type":"Title"}],"root_ids":["f31b25b8-9038-45ed-8953-d9d3a65741d8"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"2cd40ee3-b36c-40ba-8c66-1c049175de10","elementid":"ae5adb52-10c9-48cb-b0a6-c91643f32beb","modelid":"f31b25b8-9038-45ed-8953-d9d3a65741d8"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -3482,10 +3481,10 @@ hv.Curve(table) + hv.Bars(table)
 #################################################################################################################################
 ################################################ MILESTONE PROJECT - PART 3 ######################################################
 
-#1. Request API of stock ticker prices from Quandle WIKI dataset (two approaches with and without selection filters applied) 
+#1. Request API of stock ticker prices from Quandle WIKI dataset (two approaches with and without selection filters applied)
 #2. Convert jSon data to Pandas dataframe
-#3. Create two separate dataframes, one for closing prices per ticker and another one for closing, opening, adjusted closing and adjusted openening prices per ticker  
-#4. Analyze prices data since last month 
+#3. Create two separate dataframes, one for closing prices per ticker and another one for closing, opening, adjusted closing and adjusted openening prices per ticker
+#4. Analyze prices data since last month
 #5. Create table and plot data (Bokeh, Holoviews)
 
 ```
@@ -4125,7 +4124,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 
   <img src='data:image/png;base64,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'
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
   <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -4180,7 +4179,7 @@ mhrfO3fufECS5GHXnf8pAAAAHMfdURTdimGYPjExsTo0NHTyj2ynEplMxurs7HyHIAiKJMlSHMct
 U9k9N2vl5+cH0en0TRiGWX18fC65vnh+LxqNBq2oqFhgMpmi7XY7arVaj+zdu/fxn/l/4bSZl5fH
 5nK5CQAQMtXznCRJePpEbwOAZhzHX4ix/wHzzC/tu64gcwAAAABJRU5ErkJggg=='
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
 </div>
@@ -4220,7 +4219,7 @@ r
 #Return json file as python dict
 
 ticker = r.json()
-ticker 
+ticker
 ```
 
 
@@ -18286,7 +18285,7 @@ ticker.keys()
 
 
 ```python
-#3.1.A) OBTAIN A DATAFRAME OF CLOSING PRICES OF EACH TICKER FROM THE LAST MONTH 
+#3.1.A) OBTAIN A DATAFRAME OF CLOSING PRICES OF EACH TICKER FROM THE LAST MONTH
 
 #Select last  month prices
 
@@ -18520,7 +18519,7 @@ out.plot.box(figsize=(8, 5))
 
 
 
-![png](output_66_1.png)
+![png](MILESTONE/images/output_66_1.png)
 
 
 
@@ -18538,7 +18537,7 @@ out.plot.bar(colormap='Greens',stacked=True, figsize=(11, 7),legend='top_right')
 
 
 
-![png](output_67_1.png)
+![png](MILESTONE/images/output_67_1.png)
 
 
 
@@ -18559,7 +18558,7 @@ ds.to(hv.Curve, 'Date','Price')
 <div class="hololayout row row-fluid">
   <div class="holoframe" id="display_area570f422d49154300b007f5029aae3354">
     <div id="_anim_img570f422d49154300b007f5029aae3354">
-      
+
       <div style='display: table; margin: 0 auto;'>
 
 <div class="bk-root">
@@ -18568,7 +18567,7 @@ ds.to(hv.Curve, 'Date','Price')
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"bd3813df-9c45-4cfd-8338-2b163a98e238":{"roots":{"references":[{"attributes":{"plot":null,"text":"Ticker: A","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"619258c5-1ea8-4e22-9e2f-ae962427e80a","type":"Title"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"65e971dc-2a3a-413b-bf05-f50e9c9dbb99","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"72107dbe-54e8-4f86-aa29-13748f33f86c","subtype":"Figure","type":"Plot"},"ticker":{"id":"640bc0c1-5348-4dc9-bab3-7cd6f28352f6","type":"BasicTicker"}},"id":"5670939d-c005-4ee5-b92b-cc9273f179f2","type":"LinearAxis"},{"attributes":{},"id":"51c0df7d-e746-4a9e-b973-19ee8a90cdd4","type":"LinearScale"},{"attributes":{"line_alpha":0.1,"line_color":"#30a2da","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"ba8e62e4-b246-4f29-9438-37f3e224e534","type":"Line"},{"attributes":{},"id":"640bc0c1-5348-4dc9-bab3-7cd6f28352f6","type":"BasicTicker"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"87e4ca3a-641c-4c02-abb0-3fcd61bbd1c3","type":"CategoricalAxis"}],"left":[{"id":"5670939d-c005-4ee5-b92b-cc9273f179f2","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":550,"plot_width":800,"renderers":[{"id":"87e4ca3a-641c-4c02-abb0-3fcd61bbd1c3","type":"CategoricalAxis"},{"id":"148f86be-7fd3-4015-a264-02afb9e86399","type":"Grid"},{"id":"5670939d-c005-4ee5-b92b-cc9273f179f2","type":"LinearAxis"},{"id":"5634623b-626f-44c6-bd70-b8dcfd353661","type":"Grid"},{"id":"d845eb9a-41a8-43b3-8fdd-9e5df9e96ed4","type":"BoxAnnotation"},{"id":"de203bb2-283b-4ee8-b12b-ad9b0ccdd07e","type":"GlyphRenderer"}],"title":{"id":"619258c5-1ea8-4e22-9e2f-ae962427e80a","type":"Title"},"toolbar":{"id":"7dc4b009-0d89-4085-9c8f-f6e8821f1946","type":"Toolbar"},"x_range":{"id":"ade6d5ea-8a97-4aaf-ae6e-d7f66c0cf05f","type":"FactorRange"},"x_scale":{"id":"51ed41ad-154b-4d82-9f19-6ee426ed3a15","type":"CategoricalScale"},"y_range":{"id":"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb","type":"Range1d"},"y_scale":{"id":"51c0df7d-e746-4a9e-b973-19ee8a90cdd4","type":"LinearScale"}},"id":"72107dbe-54e8-4f86-aa29-13748f33f86c","subtype":"Figure","type":"Plot"},{"attributes":{"overlay":{"id":"d845eb9a-41a8-43b3-8fdd-9e5df9e96ed4","type":"BoxAnnotation"}},"id":"3e5c1df0-1f6c-4a96-958a-4e2866779ab4","type":"BoxZoomTool"},{"attributes":{},"id":"65e971dc-2a3a-413b-bf05-f50e9c9dbb99","type":"BasicTickFormatter"},{"attributes":{"callback":null,"end":74.82,"start":67.6},"id":"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb","type":"Range1d"},{"attributes":{},"id":"28736c83-8c19-402f-9e44-907832afa583","type":"SaveTool"},{"attributes":{},"id":"7d59f26e-463c-4df6-8aba-81b716d63077","type":"CategoricalTickFormatter"},{"attributes":{},"id":"ac725027-996a-4627-b5ec-a7e2252cf51d","type":"PanTool"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"7d59f26e-463c-4df6-8aba-81b716d63077","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"72107dbe-54e8-4f86-aa29-13748f33f86c","subtype":"Figure","type":"Plot"},"ticker":{"id":"6ac6020a-cbe9-4ed7-ab4e-ef82e23b57a1","type":"CategoricalTicker"}},"id":"87e4ca3a-641c-4c02-abb0-3fcd61bbd1c3","type":"CategoricalAxis"},{"attributes":{},"id":"51ed41ad-154b-4d82-9f19-6ee426ed3a15","type":"CategoricalScale"},{"attributes":{},"id":"ce5fe665-0599-4562-8b5d-a5f679e2685a","type":"WheelZoomTool"},{"attributes":{"data_source":{"id":"574c9214-f116-48de-870f-2fec93b5c748","type":"ColumnDataSource"},"glyph":{"id":"3a47cc18-208e-4f9f-8e7c-7fbe10240011","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"4fb4d923-b096-4509-b443-293693132393","type":"Line"},"nonselection_glyph":{"id":"ba8e62e4-b246-4f29-9438-37f3e224e534","type":"Line"},"selection_glyph":null,"view":{"id":"dff49bc8-a625-4693-8c90-b7cc082f9673","type":"CDSView"}},"id":"de203bb2-283b-4ee8-b12b-ad9b0ccdd07e","type":"GlyphRenderer"},{"attributes":{},"id":"b0d23a9a-e763-4087-9884-765813edb86e","type":"ResetTool"},{"attributes":{"line_color":"#30a2da","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"3a47cc18-208e-4f9f-8e7c-7fbe10240011","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"d845eb9a-41a8-43b3-8fdd-9e5df9e96ed4","type":"BoxAnnotation"},{"attributes":{"line_alpha":0.2,"line_color":"#30a2da","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"4fb4d923-b096-4509-b443-293693132393","type":"Line"},{"attributes":{},"id":"6ac6020a-cbe9-4ed7-ab4e-ef82e23b57a1","type":"CategoricalTicker"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"72107dbe-54e8-4f86-aa29-13748f33f86c","subtype":"Figure","type":"Plot"},"ticker":{"id":"640bc0c1-5348-4dc9-bab3-7cd6f28352f6","type":"BasicTicker"}},"id":"5634623b-626f-44c6-bd70-b8dcfd353661","type":"Grid"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA","dtype":"float64","shape":[21]}}},"id":"574c9214-f116-48de-870f-2fec93b5c748","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"28736c83-8c19-402f-9e44-907832afa583","type":"SaveTool"},{"id":"ac725027-996a-4627-b5ec-a7e2252cf51d","type":"PanTool"},{"id":"ce5fe665-0599-4562-8b5d-a5f679e2685a","type":"WheelZoomTool"},{"id":"3e5c1df0-1f6c-4a96-958a-4e2866779ab4","type":"BoxZoomTool"},{"id":"b0d23a9a-e763-4087-9884-765813edb86e","type":"ResetTool"}]},"id":"7dc4b009-0d89-4085-9c8f-f6e8821f1946","type":"Toolbar"},{"attributes":{"source":{"id":"574c9214-f116-48de-870f-2fec93b5c748","type":"ColumnDataSource"}},"id":"dff49bc8-a625-4693-8c90-b7cc082f9673","type":"CDSView"},{"attributes":{"callback":null,"factors":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"ade6d5ea-8a97-4aaf-ae6e-d7f66c0cf05f","type":"FactorRange"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"72107dbe-54e8-4f86-aa29-13748f33f86c","subtype":"Figure","type":"Plot"},"ticker":{"id":"6ac6020a-cbe9-4ed7-ab4e-ef82e23b57a1","type":"CategoricalTicker"}},"id":"148f86be-7fd3-4015-a264-02afb9e86399","type":"Grid"}],"root_ids":["72107dbe-54e8-4f86-aa29-13748f33f86c"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"bd3813df-9c45-4cfd-8338-2b163a98e238","elementid":"5b2ff9e6-44ed-4ab1-bfae-d56856935b00","modelid":"72107dbe-54e8-4f86-aa29-13748f33f86c"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -18593,13 +18592,13 @@ ds.to(hv.Curve, 'Date','Price')
 })(window);
 </script>
 </div>
-      
+
     </div>
   </div>
   <div class="holowidgets" id="widget_area570f422d49154300b007f5029aae3354">
     <form class="holoform well" id="form570f422d49154300b007f5029aae3354">
-      
-      
+
+
         <div class="form-group control-group holoformgroup" style=''>
           <label for="textInput570f422d49154300b007f5029aae3354_Ticker"><strong>Ticker:</strong></label>
           <select class="holoselect form-control" id="_anim_widget570f422d49154300b007f5029aae3354_Ticker" >
@@ -18643,8 +18642,8 @@ ds.to(hv.Curve, 'Date','Price')
         }
         $(document).ready(init_dropdown)
         </script>
-        
-        
+
+
         </form>
     </div>
 </div>
@@ -18663,9 +18662,9 @@ ds.to(hv.Curve, 'Date','Price')
 		$("#widget_area570f422d49154300b007f5029aae3354").resizable();
 	}
     var widget_ids = new Array(1);
-    
+
     widget_ids[0] = "_anim_widget570f422d49154300b007f5029aae3354_Ticker";
-    
+
     var frame_data = {"0": "{\"content\":{\"events\":[{\"attr\":\"factors\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"ade6d5ea-8a97-4aaf-ae6e-d7f66c0cf05f\",\"type\":\"FactorRange\"},\"new\":[\"2018-01-02\",\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-12\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-19\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"]},{\"attr\":\"start\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":67.6},{\"attr\":\"end\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":74.82},{\"attr\":\"text\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"619258c5-1ea8-4e22-9e2f-ae962427e80a\",\"type\":\"Title\"},\"new\":\"Ticker: A\"},{\"cols\":[\"Date\",\"Price\"],\"column_source\":{\"id\":\"574c9214-f116-48de-870f-2fec93b5c748\",\"type\":\"ColumnDataSource\"},\"kind\":\"ColumnDataChanged\",\"new\":{\"Date\":[\"2018-01-02\",\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-12\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-19\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"],\"Price\":{\"__ndarray__\":\"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA\",\"dtype\":\"float64\",\"shape\":[21]}}},{\"cols\":[\"Date\",\"Price\"],\"column_source\":{\"id\":\"574c9214-f116-48de-870f-2fec93b5c748\",\"type\":\"ColumnDataSource\"},\"kind\":\"ColumnDataChanged\",\"new\":{\"Date\":[\"2018-01-02\",\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-12\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-19\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"],\"Price\":{\"__ndarray__\":\"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA\",\"dtype\":\"float64\",\"shape\":[21]}}}],\"references\":[]},\"root\":\"72107dbe-54e8-4f86-aa29-13748f33f86c\"}", "1": "{\"content\":{\"events\":[{\"attr\":\"start\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":52.02},{\"attr\":\"end\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":56.99},{\"attr\":\"text\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"619258c5-1ea8-4e22-9e2f-ae962427e80a\",\"type\":\"Title\"},\"new\":\"Ticker: AA\"},{\"cols\":[\"Date\",\"Price\"],\"column_source\":{\"id\":\"574c9214-f116-48de-870f-2fec93b5c748\",\"type\":\"ColumnDataSource\"},\"kind\":\"ColumnDataChanged\",\"new\":{\"Date\":[\"2018-01-02\",\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-12\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-19\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"],\"Price\":{\"__ndarray__\":\"9ihcj8KVS0AAAAAAAEBLQJqZmZmZWUtA7FG4HoULS0AAAAAAAIBLQJqZmZmZGUtA9ihcj8IVTEAUrkfhenRMQOF6FK5HYUxAH4XrUbgeTEAfhetRuH5MQAAAAAAAgEpAzczMzMyMSkC4HoXrUXhKQB+F61G4PkpAZmZmZmamSkCuR+F6FI5KQAAAAAAAAEtAH4XrUbg+S0DD9Shcj0JKQMP1KFyPAkpA\",\"dtype\":\"float64\",\"shape\":[21]}}}],\"references\":[]},\"root\":\"72107dbe-54e8-4f86-aa29-13748f33f86c\"}", "2": "{\"content\":{\"events\":[{\"attr\":\"start\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":52.08},{\"attr\":\"end\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":58.47},{\"attr\":\"text\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"619258c5-1ea8-4e22-9e2f-ae962427e80a\",\"type\":\"Title\"},\"new\":\"Ticker: AAL\"},{\"cols\":[\"Date\",\"Price\"],\"column_source\":{\"id\":\"574c9214-f116-48de-870f-2fec93b5c748\",\"type\":\"ColumnDataSource\"},\"kind\":\"ColumnDataChanged\",\"new\":{\"Date\":[\"2018-01-02\",\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-12\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-19\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"],\"Price\":{\"__ndarray__\":\"H4XrUbh+SkAK16NwPSpKQPYoXI/CVUpAMzMzMzNTSkBxPQrXoxBKQArXo3A9CkpApHA9CtfjSkD2KFyPwjVMQFyPwvUoPE1ArkfhehT+TEAUrkfhehRNQOxRuB6FK01ASOF6FK4HTUDNzMzMzAxNQIXrUbgeJU1AhetRuB5lS0BmZmZmZoZKQClcj8L1iEpA16NwPQpXSkDsUbgehUtKQClcj8L1KEtA\",\"dtype\":\"float64\",\"shape\":[21]}}}],\"references\":[]},\"root\":\"72107dbe-54e8-4f86-aa29-13748f33f86c\"}", "3": "{\"content\":{\"events\":[{\"attr\":\"factors\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"ade6d5ea-8a97-4aaf-ae6e-d7f66c0cf05f\",\"type\":\"FactorRange\"},\"new\":[\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"]},{\"attr\":\"start\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":66.1803},{\"attr\":\"end\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"fcdd1685-4b1e-42d3-9e33-6fb4aeb9ecfb\",\"type\":\"Range1d\"},\"new\":80.2},{\"attr\":\"text\",\"kind\":\"ModelChanged\",\"model\":{\"id\":\"619258c5-1ea8-4e22-9e2f-ae962427e80a\",\"type\":\"Title\"},\"new\":\"Ticker: AAMC\"},{\"cols\":[\"Date\",\"Price\"],\"column_source\":{\"id\":\"574c9214-f116-48de-870f-2fec93b5c748\",\"type\":\"ColumnDataSource\"},\"kind\":\"ColumnDataChanged\",\"new\":{\"Date\":[\"2018-01-03\",\"2018-01-04\",\"2018-01-05\",\"2018-01-08\",\"2018-01-09\",\"2018-01-10\",\"2018-01-11\",\"2018-01-16\",\"2018-01-17\",\"2018-01-18\",\"2018-01-22\",\"2018-01-23\",\"2018-01-24\",\"2018-01-25\",\"2018-01-26\",\"2018-01-29\",\"2018-01-30\",\"2018-01-31\"],\"Price\":{\"__ndarray__\":\"zczMzMx8U0DNzMzMzAxUQM3MzMzMDFRAzczMzMwMVEAAAAAAAMBTQAAAAAAAwFNAj8L1KFz/U0DNzMzMzPxSQPLSTWIQ4FFA8tJNYhDgUUAB3gIJiotQQM3MzMzM7FBArWnecYpqUUCtad5ximpRQJqZmZmZCVFAmpmZmZkJUUBa9bnaikFRQFr1udqKQVFA\",\"dtype\":\"float64\",\"shape\":[18]}}}],\"references\":[]},\"root\":\"72107dbe-54e8-4f86-aa29-13748f33f86c\"}"};
     var dim_vals = ['A'];
     var keyMap = {"('A',)": 0, "('AA',)": 1, "('AAL',)": 2, "('AAMC',)": 3};
@@ -18677,9 +18676,9 @@ ds.to(hv.Curve, 'Date','Price')
 				true, "./json_figures/", false);
         }, 0);
     }
-    
+
     create_widget();
-    
+
 })();
 </script>
 
@@ -18703,7 +18702,7 @@ ds.select(Ticker=Tickers).to(hv.Bars, ['Date','Ticker'], 'Price').sort()
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"12748b16-8336-4f3d-9203-2aabc902151d":{"roots":{"references":[{"attributes":{"callback":null,"column_names":["xoffsets","Date","Price","Ticker"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31","2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31","2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-16","2018-01-17","2018-01-18","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA9ihcj8KVS0AAAAAAAEBLQJqZmZmZWUtA7FG4HoULS0AAAAAAAIBLQJqZmZmZGUtA9ihcj8IVTEAUrkfhenRMQOF6FK5HYUxAH4XrUbgeTEAfhetRuH5MQAAAAAAAgEpAzczMzMyMSkC4HoXrUXhKQB+F61G4PkpAZmZmZmamSkCuR+F6FI5KQAAAAAAAAEtAH4XrUbg+S0DD9Shcj0JKQMP1KFyPAkpAH4XrUbh+SkAK16NwPSpKQPYoXI/CVUpAMzMzMzNTSkBxPQrXoxBKQArXo3A9CkpApHA9CtfjSkD2KFyPwjVMQFyPwvUoPE1ArkfhehT+TEAUrkfhehRNQOxRuB6FK01ASOF6FK4HTUDNzMzMzAxNQIXrUbgeJU1AhetRuB5lS0BmZmZmZoZKQClcj8L1iEpA16NwPQpXSkDsUbgehUtKQClcj8L1KEtAzczMzMx8U0DNzMzMzAxUQM3MzMzMDFRAzczMzMwMVEAAAAAAAMBTQAAAAAAAwFNAj8L1KFz/U0DNzMzMzPxSQPLSTWIQ4FFA8tJNYhDgUUAB3gIJiotQQM3MzMzM7FBArWnecYpqUUCtad5ximpRQJqZmZmZCVFAmpmZmZkJUUBa9bnaikFRQFr1udqKQVFA","dtype":"float64","shape":[81]},"Ticker":["A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","A","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AA","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAL","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC","AAMC"],"xoffsets":[["2018-01-02","A"],["2018-01-03","A"],["2018-01-04","A"],["2018-01-05","A"],["2018-01-08","A"],["2018-01-09","A"],["2018-01-10","A"],["2018-01-11","A"],["2018-01-12","A"],["2018-01-16","A"],["2018-01-17","A"],["2018-01-18","A"],["2018-01-19","A"],["2018-01-22","A"],["2018-01-23","A"],["2018-01-24","A"],["2018-01-25","A"],["2018-01-26","A"],["2018-01-29","A"],["2018-01-30","A"],["2018-01-31","A"],["2018-01-02","AA"],["2018-01-03","AA"],["2018-01-04","AA"],["2018-01-05","AA"],["2018-01-08","AA"],["2018-01-09","AA"],["2018-01-10","AA"],["2018-01-11","AA"],["2018-01-12","AA"],["2018-01-16","AA"],["2018-01-17","AA"],["2018-01-18","AA"],["2018-01-19","AA"],["2018-01-22","AA"],["2018-01-23","AA"],["2018-01-24","AA"],["2018-01-25","AA"],["2018-01-26","AA"],["2018-01-29","AA"],["2018-01-30","AA"],["2018-01-31","AA"],["2018-01-02","AAL"],["2018-01-03","AAL"],["2018-01-04","AAL"],["2018-01-05","AAL"],["2018-01-08","AAL"],["2018-01-09","AAL"],["2018-01-10","AAL"],["2018-01-11","AAL"],["2018-01-12","AAL"],["2018-01-16","AAL"],["2018-01-17","AAL"],["2018-01-18","AAL"],["2018-01-19","AAL"],["2018-01-22","AAL"],["2018-01-23","AAL"],["2018-01-24","AAL"],["2018-01-25","AAL"],["2018-01-26","AAL"],["2018-01-29","AAL"],["2018-01-30","AAL"],["2018-01-31","AAL"],["2018-01-03","AAMC"],["2018-01-04","AAMC"],["2018-01-05","AAMC"],["2018-01-08","AAMC"],["2018-01-09","AAMC"],["2018-01-10","AAMC"],["2018-01-11","AAMC"],["2018-01-16","AAMC"],["2018-01-17","AAMC"],["2018-01-18","AAMC"],["2018-01-22","AAMC"],["2018-01-23","AAMC"],["2018-01-24","AAMC"],["2018-01-25","AAMC"],["2018-01-26","AAMC"],["2018-01-29","AAMC"],["2018-01-30","AAMC"],["2018-01-31","AAMC"]]}},"id":"64a5bbee-12eb-4ea2-b5c7-2bef8f56f9d4","type":"ColumnDataSource"},{"attributes":{},"id":"cb3ca427-ebdd-4975-a476-39cb384be1e0","type":"CategoricalTicker"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"},"ticker":{"id":"cb3ca427-ebdd-4975-a476-39cb384be1e0","type":"CategoricalTicker"}},"id":"38cdd446-216a-4a4c-8a8d-a29ea0d113e6","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"7f2a4dac-79fc-4670-82a8-32b65f953a47","type":"BoxAnnotation"},{"attributes":{"items":[{"id":"155bccb0-092d-4f4f-ac39-477b4bbc7155","type":"LegendItem"}],"plot":{"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"}},"id":"d8a3732b-23ba-4e80-bd0d-8feedbda5cae","type":"Legend"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"Ticker","transform":{"id":"4f632779-7474-4ce1-b679-83c3b4cca0d3","type":"CategoricalColorMapper"}},"line_alpha":{"value":0.1},"line_color":{"value":"#000000"},"top":{"field":"Price"},"width":{"value":0.8},"x":{"field":"xoffsets"}},"id":"236620d5-a8d5-494c-a352-340fa6af5537","type":"VBar"},{"attributes":{},"id":"922c2ccd-e170-4c8b-8e2b-5ab4ece1a699","type":"CategoricalScale"},{"attributes":{"overlay":{"id":"7f2a4dac-79fc-4670-82a8-32b65f953a47","type":"BoxAnnotation"}},"id":"55d9e495-dd88-4715-9b1c-a698ba3f07ae","type":"BoxZoomTool"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a67facf-4380-4a69-8cff-1cdc771c501e","type":"BasicTicker"}},"id":"ac87e49f-152f-4392-af17-dd0ff86675ab","type":"Grid"},{"attributes":{},"id":"2a67facf-4380-4a69-8cff-1cdc771c501e","type":"BasicTicker"},{"attributes":{"data_source":{"id":"64a5bbee-12eb-4ea2-b5c7-2bef8f56f9d4","type":"ColumnDataSource"},"glyph":{"id":"9421db44-b663-4c7d-8a82-e76e24e0c1c1","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"236620d5-a8d5-494c-a352-340fa6af5537","type":"VBar"},"selection_glyph":null,"view":{"id":"77e25566-5517-4d12-b8a3-0f3532d82ec9","type":"CDSView"}},"id":"95eaa799-cfbb-4998-be5e-8bd01da78ae0","type":"GlyphRenderer"},{"attributes":{"factors":["A","AA","AAL","AAMC"],"palette":["#30a2da","#fc4f30","#e5ae38","#6d904f"]},"id":"4f632779-7474-4ce1-b679-83c3b4cca0d3","type":"CategoricalColorMapper"},{"attributes":{"source":{"id":"64a5bbee-12eb-4ea2-b5c7-2bef8f56f9d4","type":"ColumnDataSource"}},"id":"77e25566-5517-4d12-b8a3-0f3532d82ec9","type":"CDSView"},{"attributes":{},"id":"3356d8fd-11dd-4c3b-be8f-911bb864c447","type":"PanTool"},{"attributes":{"callback":null,"factors":[["2018-01-02","A"],["2018-01-02","AA"],["2018-01-02","AAL"],["2018-01-02","AAMC"],["2018-01-03","A"],["2018-01-03","AA"],["2018-01-03","AAL"],["2018-01-03","AAMC"],["2018-01-04","A"],["2018-01-04","AA"],["2018-01-04","AAL"],["2018-01-04","AAMC"],["2018-01-05","A"],["2018-01-05","AA"],["2018-01-05","AAL"],["2018-01-05","AAMC"],["2018-01-08","A"],["2018-01-08","AA"],["2018-01-08","AAL"],["2018-01-08","AAMC"],["2018-01-09","A"],["2018-01-09","AA"],["2018-01-09","AAL"],["2018-01-09","AAMC"],["2018-01-10","A"],["2018-01-10","AA"],["2018-01-10","AAL"],["2018-01-10","AAMC"],["2018-01-11","A"],["2018-01-11","AA"],["2018-01-11","AAL"],["2018-01-11","AAMC"],["2018-01-12","A"],["2018-01-12","AA"],["2018-01-12","AAL"],["2018-01-12","AAMC"],["2018-01-16","A"],["2018-01-16","AA"],["2018-01-16","AAL"],["2018-01-16","AAMC"],["2018-01-17","A"],["2018-01-17","AA"],["2018-01-17","AAL"],["2018-01-17","AAMC"],["2018-01-18","A"],["2018-01-18","AA"],["2018-01-18","AAL"],["2018-01-18","AAMC"],["2018-01-19","A"],["2018-01-19","AA"],["2018-01-19","AAL"],["2018-01-19","AAMC"],["2018-01-22","A"],["2018-01-22","AA"],["2018-01-22","AAL"],["2018-01-22","AAMC"],["2018-01-23","A"],["2018-01-23","AA"],["2018-01-23","AAL"],["2018-01-23","AAMC"],["2018-01-24","A"],["2018-01-24","AA"],["2018-01-24","AAL"],["2018-01-24","AAMC"],["2018-01-25","A"],["2018-01-25","AA"],["2018-01-25","AAL"],["2018-01-25","AAMC"],["2018-01-26","A"],["2018-01-26","AA"],["2018-01-26","AAL"],["2018-01-26","AAMC"],["2018-01-29","A"],["2018-01-29","AA"],["2018-01-29","AAL"],["2018-01-29","AAMC"],["2018-01-30","A"],["2018-01-30","AA"],["2018-01-30","AAL"],["2018-01-30","AAMC"],["2018-01-31","A"],["2018-01-31","AA"],["2018-01-31","AAL"],["2018-01-31","AAMC"]]},"id":"9b3d4d35-fa34-41d1-aae3-d4cd1f0afeac","type":"FactorRange"},{"attributes":{},"id":"13950666-0f2a-4588-abe8-a942b44c729f","type":"ResetTool"},{"attributes":{},"id":"e2e779b9-6b8c-406e-8c52-b99b05342234","type":"BasicTickFormatter"},{"attributes":{},"id":"e2455892-1b34-4be6-a941-0103889250f6","type":"WheelZoomTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"76520f73-d33b-4230-bf26-c587a25d6d71","type":"HoverTool"},{"id":"81416728-37d6-44e3-bd8d-d35d1528b900","type":"SaveTool"},{"id":"3356d8fd-11dd-4c3b-be8f-911bb864c447","type":"PanTool"},{"id":"e2455892-1b34-4be6-a941-0103889250f6","type":"WheelZoomTool"},{"id":"55d9e495-dd88-4715-9b1c-a698ba3f07ae","type":"BoxZoomTool"},{"id":"13950666-0f2a-4588-abe8-a942b44c729f","type":"ResetTool"}]},"id":"1fd9007b-fc8e-41a1-8328-229343a72e09","type":"Toolbar"},{"attributes":{"fill_color":{"field":"Ticker","transform":{"id":"4f632779-7474-4ce1-b679-83c3b4cca0d3","type":"CategoricalColorMapper"}},"line_color":{"value":"#000000"},"top":{"field":"Price"},"width":{"value":0.8},"x":{"field":"xoffsets"}},"id":"9421db44-b663-4c7d-8a82-e76e24e0c1c1","type":"VBar"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"82d3a428-6580-4400-bfc2-c287aa45d972","type":"Title"},{"attributes":{"callback":null,"end":80.2},"id":"72323dbe-6f0f-4e9c-be29-a8a17bcab2af","type":"Range1d"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"7c24ad0d-6de2-4790-b41d-be583dde4dd5","type":"CategoricalAxis"}],"left":[{"id":"9a650ab5-4242-45e4-aedc-0ed9aa8cd558","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":400,"plot_width":900,"renderers":[{"id":"7c24ad0d-6de2-4790-b41d-be583dde4dd5","type":"CategoricalAxis"},{"id":"38cdd446-216a-4a4c-8a8d-a29ea0d113e6","type":"Grid"},{"id":"9a650ab5-4242-45e4-aedc-0ed9aa8cd558","type":"LinearAxis"},{"id":"ac87e49f-152f-4392-af17-dd0ff86675ab","type":"Grid"},{"id":"7f2a4dac-79fc-4670-82a8-32b65f953a47","type":"BoxAnnotation"},{"id":"d8a3732b-23ba-4e80-bd0d-8feedbda5cae","type":"Legend"},{"id":"95eaa799-cfbb-4998-be5e-8bd01da78ae0","type":"GlyphRenderer"}],"title":{"id":"82d3a428-6580-4400-bfc2-c287aa45d972","type":"Title"},"toolbar":{"id":"1fd9007b-fc8e-41a1-8328-229343a72e09","type":"Toolbar"},"x_range":{"id":"9b3d4d35-fa34-41d1-aae3-d4cd1f0afeac","type":"FactorRange"},"x_scale":{"id":"922c2ccd-e170-4c8b-8e2b-5ab4ece1a699","type":"CategoricalScale"},"y_range":{"id":"72323dbe-6f0f-4e9c-be29-a8a17bcab2af","type":"Range1d"},"y_scale":{"id":"0db42ae4-d85a-479d-9177-01f97c4b0499","type":"LinearScale"}},"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"},{"attributes":{"axis_label":"Date, Ticker","bounds":"auto","formatter":{"id":"6a832956-9889-4d1a-a90a-7773228d736a","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"},"ticker":{"id":"cb3ca427-ebdd-4975-a476-39cb384be1e0","type":"CategoricalTicker"}},"id":"7c24ad0d-6de2-4790-b41d-be583dde4dd5","type":"CategoricalAxis"},{"attributes":{},"id":"81416728-37d6-44e3-bd8d-d35d1528b900","type":"SaveTool"},{"attributes":{},"id":"0db42ae4-d85a-479d-9177-01f97c4b0499","type":"LinearScale"},{"attributes":{},"id":"6a832956-9889-4d1a-a90a-7773228d736a","type":"CategoricalTickFormatter"},{"attributes":{"label":{"field":"Ticker"},"renderers":[{"id":"95eaa799-cfbb-4998-be5e-8bd01da78ae0","type":"GlyphRenderer"}]},"id":"155bccb0-092d-4f4f-ac39-477b4bbc7155","type":"LegendItem"},{"attributes":{"callback":null,"renderers":[{"id":"95eaa799-cfbb-4998-be5e-8bd01da78ae0","type":"GlyphRenderer"}],"tooltips":[["Date","@{Date}"],["Ticker","@{Ticker}"],["Stock Input","@{Price}"]]},"id":"76520f73-d33b-4230-bf26-c587a25d6d71","type":"HoverTool"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"e2e779b9-6b8c-406e-8c52-b99b05342234","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"de728a47-5ac5-4e11-9f3f-13403631492d","subtype":"Figure","type":"Plot"},"ticker":{"id":"2a67facf-4380-4a69-8cff-1cdc771c501e","type":"BasicTicker"}},"id":"9a650ab5-4242-45e4-aedc-0ed9aa8cd558","type":"LinearAxis"}],"root_ids":["de728a47-5ac5-4e11-9f3f-13403631492d"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"12748b16-8336-4f3d-9203-2aabc902151d","elementid":"1cdfbc47-2364-47e1-8d6d-20de98f7fd6f","modelid":"de728a47-5ac5-4e11-9f3f-13403631492d"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -18750,7 +18749,7 @@ grouped.grid('Ticker')
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"1e40b652-9752-4c48-816e-7cbfbf2a7086":{"roots":{"references":[{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},"ticker":{"id":"a4a3c38f-b865-47cf-85a6-7474c864462c","type":"CategoricalTicker"}},"id":"dbef0a02-f041-4eb2-af31-f97bf5cc3381","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"3c35610f-de4f-4803-9218-91e4e22746cf","type":"BoxAnnotation"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},"ticker":{"id":"bb39fe6d-1c66-46e7-b113-c6c924999c3a","type":"BasicTicker"}},"id":"a5b775a5-e030-456c-a910-63d620b9bee0","type":"Grid"},{"attributes":{},"id":"181fbf79-7789-4080-add0-44284d68b0a4","type":"BasicTicker"},{"attributes":{"source":{"id":"60e8ac28-5f58-41bb-b1e2-a97f2e48e2a9","type":"ColumnDataSource"}},"id":"7c47205d-29a7-4079-9d44-1e553d89a947","type":"CDSView"},{"attributes":{"children":[{"id":"09643cba-dfbf-4fd4-8868-ad381e1b9223","type":"Row"}]},"id":"44e2299b-cd60-4619-b2e2-ca4910c7939a","type":"Column"},{"attributes":{},"id":"f2b5fd8b-bc12-4513-addd-41ad68bb4b41","type":"PanTool"},{"attributes":{"callback":null,"factors":["2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-16","2018-01-17","2018-01-18","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"167e99df-4795-423c-b336-f4cb9ab03e3c","type":"FactorRange"},{"attributes":{"overlay":{"id":"289373c9-719f-4fac-896c-0d58a92d6f0a","type":"BoxAnnotation"}},"id":"a16e7a9b-bd0d-4af8-88b0-f8d818b9764f","type":"BoxZoomTool"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"a650c1f3-56d7-43aa-b7bc-e2ebb0d1d808","type":"Title"},{"attributes":{"callback":null},"id":"03c20f64-2325-418a-8250-3982a15fb98f","type":"Range1d"},{"attributes":{},"id":"b338c03c-727e-405a-8281-1d3d2c92471d","type":"PanTool"},{"attributes":{},"id":"00501c8a-b138-43a1-8029-5d6cb55e479c","type":"CategoricalTicker"},{"attributes":{"line_alpha":0.2,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"426d3f52-e1d6-44f8-b097-b97a2222ba9b","type":"Line"},{"attributes":{"axis_label":"Ticker","formatter":{"id":"9f482e1a-2e92-4439-980c-ca30de9febc4","type":"CategoricalTickFormatter"},"major_label_orientation":0.0,"major_label_text_baseline":"middle","plot":{"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"},"ticker":{"id":"38b76bba-2870-442f-9fe0-3aef0000c8ab","type":"CategoricalTicker"}},"id":"9791aef2-b6d3-4c2c-a038-97921d71c3c8","type":"CategoricalAxis"},{"attributes":{},"id":"33cf5f51-c074-4fbb-b333-134dc06d8b66","type":"CategoricalTicker"},{"attributes":{},"id":"48b6fe8d-42ec-4022-b243-0792c5c3cd22","type":"SaveTool"},{"attributes":{"tools":[{"id":"aacaa118-fdc6-4913-8af8-fff0c28db26b","type":"SaveTool"},{"id":"ed63accf-16d0-4216-8dec-6ea5644da4fd","type":"PanTool"},{"id":"740c3c96-2f39-4c5d-94ff-26b2e65b5882","type":"WheelZoomTool"},{"id":"3e6d9220-fa71-42bd-8482-fb8a47bc1ec8","type":"BoxZoomTool"},{"id":"aa645273-2d28-4431-973f-c68bf793cb5c","type":"ResetTool"},{"id":"98247dcf-ff44-4263-abaf-3ce06e38208a","type":"SaveTool"},{"id":"f2b5fd8b-bc12-4513-addd-41ad68bb4b41","type":"PanTool"},{"id":"011043bd-1a2a-4217-a051-909e1b4a43ae","type":"WheelZoomTool"},{"id":"2d7769b9-4934-47fb-bb50-ea304f94a36f","type":"BoxZoomTool"},{"id":"6ebac775-726b-4c75-98c6-fcbdd53089b7","type":"ResetTool"},{"id":"48b6fe8d-42ec-4022-b243-0792c5c3cd22","type":"SaveTool"},{"id":"60e11b5d-a707-4471-a0b2-08bacf0e70e3","type":"PanTool"},{"id":"fe0e40c7-f155-4aa3-9598-d7ce516a7c3d","type":"WheelZoomTool"},{"id":"65ef88c2-9afc-46c2-a096-89105e2aa412","type":"BoxZoomTool"},{"id":"c8aa312f-b1c7-40cf-8a63-f6ae3d4afd7a","type":"ResetTool"},{"id":"fdf44910-a124-47ae-a063-b5402031d3bb","type":"SaveTool"},{"id":"d8640b45-ff2d-4da0-ac31-d8732b59ca5d","type":"PanTool"},{"id":"4bf322e0-96fa-4659-82af-11341a347b2f","type":"WheelZoomTool"},{"id":"a16e7a9b-bd0d-4af8-88b0-f8d818b9764f","type":"BoxZoomTool"},{"id":"3f3c668e-8ea3-4d0b-b430-124ecb48d183","type":"ResetTool"}]},"id":"87de771a-6de5-4585-a9a7-cafdf9fda91e","type":"ProxyToolbar"},{"attributes":{},"id":"3620497b-242a-4f8d-bb52-083dd4366134","type":"BasicTickFormatter"},{"attributes":{},"id":"e5eccd52-dfab-4aea-8f56-b4c1edf56a36","type":"ResetTool"},{"attributes":{},"id":"bb39fe6d-1c66-46e7-b113-c6c924999c3a","type":"BasicTicker"},{"attributes":{},"id":"011043bd-1a2a-4217-a051-909e1b4a43ae","type":"WheelZoomTool"},{"attributes":{},"id":"98247dcf-ff44-4263-abaf-3ce06e38208a","type":"SaveTool"},{"attributes":{},"id":"4e80f1d3-7660-4ad2-8101-a6c9ff06d3c4","type":"CategoricalTickFormatter"},{"attributes":{},"id":"b3284b74-1106-419e-91bd-f4e5c2990195","type":"CategoricalScale"},{"attributes":{},"id":"2344d6cb-3ba5-4c79-8b39-fb7b7e770e39","type":"BasicTicker"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},"ticker":{"id":"feb96dba-c545-4248-8b7c-1db6cf154951","type":"CategoricalTicker"}},"id":"fa3ee477-3dcd-4243-9bcb-9571f7f5efdb","type":"Grid"},{"attributes":{},"id":"60e11b5d-a707-4471-a0b2-08bacf0e70e3","type":"PanTool"},{"attributes":{},"id":"aa645273-2d28-4431-973f-c68bf793cb5c","type":"ResetTool"},{"attributes":{"overlay":{"id":"2378188e-8a3f-4862-bcc1-ef9a4495fbe8","type":"BoxAnnotation"}},"id":"27986a1b-692d-4168-aced-f5b2d0e605a5","type":"BoxZoomTool"},{"attributes":{"grid_line_alpha":{"value":0},"plot":{"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"},"ticker":{"id":"38b76bba-2870-442f-9fe0-3aef0000c8ab","type":"CategoricalTicker"}},"id":"124425db-8d2e-4c9f-b2fc-dc892d8b9e22","type":"Grid"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},"ticker":{"id":"2344d6cb-3ba5-4c79-8b39-fb7b7e770e39","type":"BasicTicker"}},"id":"e6e50eb3-cb52-43a7-a299-725b92befb90","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"fdf44910-a124-47ae-a063-b5402031d3bb","type":"SaveTool"},{"id":"d8640b45-ff2d-4da0-ac31-d8732b59ca5d","type":"PanTool"},{"id":"4bf322e0-96fa-4659-82af-11341a347b2f","type":"WheelZoomTool"},{"id":"a16e7a9b-bd0d-4af8-88b0-f8d818b9764f","type":"BoxZoomTool"},{"id":"3f3c668e-8ea3-4d0b-b430-124ecb48d183","type":"ResetTool"}]},"id":"1177acf6-63f8-4aba-b0bf-36c2ebb48445","type":"Toolbar"},{"attributes":{},"id":"aacaa118-fdc6-4913-8af8-fff0c28db26b","type":"SaveTool"},{"attributes":{"children":[{"id":"81bc8513-b115-4f47-aaff-4efa4b5a6766","type":"Column"},{"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"}]},"id":"a9a8b629-18ec-49be-92dc-dc3c5b91053a","type":"Column"},{"attributes":{},"id":"d0611471-a4b3-47c5-98ae-331b8d50503d","type":"LinearScale"},{"attributes":{},"id":"d8640b45-ff2d-4da0-ac31-d8732b59ca5d","type":"PanTool"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA","dtype":"float64","shape":[21]}}},"id":"0e682a3b-58b4-462d-a746-1810b0965002","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"98247dcf-ff44-4263-abaf-3ce06e38208a","type":"SaveTool"},{"id":"f2b5fd8b-bc12-4513-addd-41ad68bb4b41","type":"PanTool"},{"id":"011043bd-1a2a-4217-a051-909e1b4a43ae","type":"WheelZoomTool"},{"id":"2d7769b9-4934-47fb-bb50-ea304f94a36f","type":"BoxZoomTool"},{"id":"6ebac775-726b-4c75-98c6-fcbdd53089b7","type":"ResetTool"}]},"id":"45952ae9-f6b7-4587-b190-0aa7a913b34d","type":"Toolbar"},{"attributes":{},"id":"c2889052-9f23-46fe-ba9d-a3f35c581687","type":"CategoricalTickFormatter"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"97ccd268-9378-430c-978e-4d2f2487d95b","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},"ticker":{"id":"feb96dba-c545-4248-8b7c-1db6cf154951","type":"CategoricalTicker"},"visible":false},"id":"1a696739-0c19-4253-b2a3-b6c8ae7aee47","type":"CategoricalAxis"},{"attributes":{"dimension":1,"grid_line_alpha":{"value":0},"plot":{"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"},"ticker":{"id":"e815bc25-6be7-4e02-812c-b435219393ba","type":"BasicTicker"}},"id":"d8f9b74c-04a3-41e0-9bba-9345fd4c33a1","type":"Grid"},{"attributes":{"line_alpha":0.2,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"102ddc29-ec07-44a3-948b-b0105b4d25a5","type":"Line"},{"attributes":{"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"bcc94ea9-6246-4362-bb63-b3e03a4f2ffa","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"5a83dad6-ae62-462c-b1dd-1b20f47dd60b","type":"BoxAnnotation"},{"attributes":{"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"b6e678c9-2b23-4de4-8da8-3f1eaaddb326","type":"Line"},{"attributes":{},"id":"740c3c96-2f39-4c5d-94ff-26b2e65b5882","type":"WheelZoomTool"},{"attributes":{},"id":"ed63accf-16d0-4216-8dec-6ea5644da4fd","type":"PanTool"},{"attributes":{"callback":null,"factors":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"8b82e6b6-2034-4d8f-9a99-6d289945e34f","type":"FactorRange"},{"attributes":{},"id":"feb96dba-c545-4248-8b7c-1db6cf154951","type":"CategoricalTicker"},{"attributes":{},"id":"a4a3c38f-b865-47cf-85a6-7474c864462c","type":"CategoricalTicker"},{"attributes":{},"id":"46809484-db34-4c66-a31d-746becaf38ff","type":"CategoricalScale"},{"attributes":{},"id":"e815bc25-6be7-4e02-812c-b435219393ba","type":"BasicTicker"},{"attributes":{},"id":"fe0e40c7-f155-4aa3-9598-d7ce516a7c3d","type":"WheelZoomTool"},{"attributes":{},"id":"a15bfa0f-05f8-4d50-aa7f-ba3c8871e67a","type":"WheelZoomTool"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"H4XrUbh+SkAK16NwPSpKQPYoXI/CVUpAMzMzMzNTSkBxPQrXoxBKQArXo3A9CkpApHA9CtfjSkD2KFyPwjVMQFyPwvUoPE1ArkfhehT+TEAUrkfhehRNQOxRuB6FK01ASOF6FK4HTUDNzMzMzAxNQIXrUbgeJU1AhetRuB5lS0BmZmZmZoZKQClcj8L1iEpA16NwPQpXSkDsUbgehUtKQClcj8L1KEtA","dtype":"float64","shape":[21]}}},"id":"7bac8a75-f823-4645-bdd3-357d736d5cc7","type":"ColumnDataSource"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"1dd1c716-7c8b-4f8f-984d-3011c8e694f4","type":"CategoricalAxis"}],"left":[{"id":"c3713969-0708-4f28-bfd6-a0975ec94ff3","type":"LinearAxis"}],"min_border_bottom":3,"min_border_left":3,"min_border_right":3,"min_border_top":3,"plot_height":120,"plot_width":200,"renderers":[{"id":"1dd1c716-7c8b-4f8f-984d-3011c8e694f4","type":"CategoricalAxis"},{"id":"7ae07475-18ad-487a-b090-7f13b3119ef5","type":"Grid"},{"id":"c3713969-0708-4f28-bfd6-a0975ec94ff3","type":"LinearAxis"},{"id":"7c0b1c49-e050-4965-a9d6-0cd646309382","type":"Grid"},{"id":"289373c9-719f-4fac-896c-0d58a92d6f0a","type":"BoxAnnotation"},{"id":"5a2cd04d-9990-477e-a322-5809ab787854","type":"GlyphRenderer"}],"title":{"id":"04f24017-d84c-4a49-81a4-3e9c3f291dee","type":"Title"},"toolbar":{"id":"1177acf6-63f8-4aba-b0bf-36c2ebb48445","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"167e99df-4795-423c-b336-f4cb9ab03e3c","type":"FactorRange"},"x_scale":{"id":"86cc6118-aa5d-4144-8a8c-c849c2c898d1","type":"CategoricalScale"},"y_range":{"id":"09ee7d65-4e80-4790-8a3e-6ed0b9b3cad4","type":"Range1d"},"y_scale":{"id":"d0611471-a4b3-47c5-98ae-331b8d50503d","type":"LinearScale"}},"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"b338c03c-727e-405a-8281-1d3d2c92471d","type":"PanTool"},{"id":"a15bfa0f-05f8-4d50-aa7f-ba3c8871e67a","type":"WheelZoomTool"},{"id":"27986a1b-692d-4168-aced-f5b2d0e605a5","type":"BoxZoomTool"},{"id":"0559bc25-ab22-4292-8a72-9cb57d04d054","type":"SaveTool"},{"id":"e5eccd52-dfab-4aea-8f56-b4c1edf56a36","type":"ResetTool"},{"id":"73f52d9a-4ca3-4a04-b896-d8526ca5bacd","type":"HelpTool"}]},"id":"bbeee331-ddcc-4da7-a900-129fca80491b","type":"Toolbar"},{"attributes":{},"id":"34ec1bbd-3db6-4026-942a-44025d231957","type":"CategoricalScale"},{"attributes":{"children":[{"id":"c73030be-d3ba-4209-b496-20ce1b8137a9","type":"ToolbarBox"},{"id":"44e2299b-cd60-4619-b2e2-ca4910c7939a","type":"Column"}]},"id":"81bc8513-b115-4f47-aaff-4efa4b5a6766","type":"Column"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"289373c9-719f-4fac-896c-0d58a92d6f0a","type":"BoxAnnotation"},{"attributes":{},"id":"2b51d9fa-28b4-4c39-bd34-5ecc1fee5ba1","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"60e8ac28-5f58-41bb-b1e2-a97f2e48e2a9","type":"ColumnDataSource"},"glyph":{"id":"f0af38c6-3576-4149-b8e0-d4ab846d72f2","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"102ddc29-ec07-44a3-948b-b0105b4d25a5","type":"Line"},"nonselection_glyph":{"id":"b079d553-cfaa-42aa-9b46-53416237fe31","type":"Line"},"selection_glyph":null,"view":{"id":"7c47205d-29a7-4079-9d44-1e553d89a947","type":"CDSView"}},"id":"5a2cd04d-9990-477e-a322-5809ab787854","type":"GlyphRenderer"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"7df64f67-7281-4ffd-ade4-7dbaf7293643","type":"CategoricalAxis"}],"left":[{"id":"1f0517d3-c43a-4135-aab4-0f615ae88cba","type":"LinearAxis"}],"min_border_bottom":3,"min_border_left":3,"min_border_right":3,"min_border_top":3,"plot_height":120,"plot_width":200,"renderers":[{"id":"7df64f67-7281-4ffd-ade4-7dbaf7293643","type":"CategoricalAxis"},{"id":"dbef0a02-f041-4eb2-af31-f97bf5cc3381","type":"Grid"},{"id":"1f0517d3-c43a-4135-aab4-0f615ae88cba","type":"LinearAxis"},{"id":"e6e50eb3-cb52-43a7-a299-725b92befb90","type":"Grid"},{"id":"5a83dad6-ae62-462c-b1dd-1b20f47dd60b","type":"BoxAnnotation"},{"id":"a1b0eee3-b282-4c1c-8e85-c660665ed1b0","type":"GlyphRenderer"}],"title":{"id":"a650c1f3-56d7-43aa-b7bc-e2ebb0d1d808","type":"Title"},"toolbar":{"id":"b2990378-ea0e-487f-9f00-e4f957890354","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"60f7d032-340d-4449-aaa1-2592af6cb63a","type":"FactorRange"},"x_scale":{"id":"ce83f2f3-092a-49ab-802b-42f765d652d3","type":"CategoricalScale"},"y_range":{"id":"09ee7d65-4e80-4790-8a3e-6ed0b9b3cad4","type":"Range1d"},"y_scale":{"id":"dc220d7a-7bd4-47fc-900f-c2a34141f7e6","type":"LinearScale"}},"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":0.1,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"7c10ecd6-a2f7-4426-88e2-58e374295e56","type":"Line"},{"attributes":{},"id":"6ebac775-726b-4c75-98c6-fcbdd53089b7","type":"ResetTool"},{"attributes":{},"id":"97ccd268-9378-430c-978e-4d2f2487d95b","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"end":80.2,"start":52.02},"id":"09ee7d65-4e80-4790-8a3e-6ed0b9b3cad4","type":"Range1d"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"1a696739-0c19-4253-b2a3-b6c8ae7aee47","type":"CategoricalAxis"}],"left":[{"id":"996c50cf-0504-4fef-9532-c98483d0ee53","type":"LinearAxis"}],"min_border_bottom":3,"min_border_left":3,"min_border_right":3,"min_border_top":3,"plot_height":120,"plot_width":200,"renderers":[{"id":"1a696739-0c19-4253-b2a3-b6c8ae7aee47","type":"CategoricalAxis"},{"id":"fa3ee477-3dcd-4243-9bcb-9571f7f5efdb","type":"Grid"},{"id":"996c50cf-0504-4fef-9532-c98483d0ee53","type":"LinearAxis"},{"id":"a5b775a5-e030-456c-a910-63d620b9bee0","type":"Grid"},{"id":"3c35610f-de4f-4803-9218-91e4e22746cf","type":"BoxAnnotation"},{"id":"ebb55f70-d3a0-43f2-9107-a9e09fa852ec","type":"GlyphRenderer"}],"title":{"id":"15d34276-00f1-4089-95fb-c3e40bc3844b","type":"Title"},"toolbar":{"id":"2d10363e-f40a-42e4-80e4-3af9ca68eec5","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"8b82e6b6-2034-4d8f-9a99-6d289945e34f","type":"FactorRange"},"x_scale":{"id":"34ec1bbd-3db6-4026-942a-44025d231957","type":"CategoricalScale"},"y_range":{"id":"09ee7d65-4e80-4790-8a3e-6ed0b9b3cad4","type":"Range1d"},"y_scale":{"id":"2182a22a-b03d-4e48-813e-8c33b9d0fcc4","type":"LinearScale"}},"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"9f482e1a-2e92-4439-980c-ca30de9febc4","type":"CategoricalTickFormatter"},{"attributes":{"overlay":{"id":"0ab7272b-7ec1-40b7-8113-fbb909755374","type":"BoxAnnotation"}},"id":"2d7769b9-4934-47fb-bb50-ea304f94a36f","type":"BoxZoomTool"},{"attributes":{},"id":"73f52d9a-4ca3-4a04-b896-d8526ca5bacd","type":"HelpTool"},{"attributes":{"source":{"id":"7bac8a75-f823-4645-bdd3-357d736d5cc7","type":"ColumnDataSource"}},"id":"54be3765-d734-4419-9366-d539ea283f4f","type":"CDSView"},{"attributes":{},"id":"f1175442-d60f-4d70-af11-9a934bd2c195","type":"BasicTickFormatter"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"},"ticker":{"id":"181fbf79-7789-4080-add0-44284d68b0a4","type":"BasicTicker"}},"id":"7c0b1c49-e050-4965-a9d6-0cd646309382","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"aacaa118-fdc6-4913-8af8-fff0c28db26b","type":"SaveTool"},{"id":"ed63accf-16d0-4216-8dec-6ea5644da4fd","type":"PanTool"},{"id":"740c3c96-2f39-4c5d-94ff-26b2e65b5882","type":"WheelZoomTool"},{"id":"3e6d9220-fa71-42bd-8482-fb8a47bc1ec8","type":"BoxZoomTool"},{"id":"aa645273-2d28-4431-973f-c68bf793cb5c","type":"ResetTool"}]},"id":"2d10363e-f40a-42e4-80e4-3af9ca68eec5","type":"Toolbar"},{"attributes":{},"id":"c8aa312f-b1c7-40cf-8a63-f6ae3d4afd7a","type":"ResetTool"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"2b51d9fa-28b4-4c39-bd34-5ecc1fee5ba1","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"},"ticker":{"id":"181fbf79-7789-4080-add0-44284d68b0a4","type":"BasicTicker"},"visible":false},"id":"c3713969-0708-4f28-bfd6-a0975ec94ff3","type":"LinearAxis"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-16","2018-01-17","2018-01-18","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"zczMzMx8U0DNzMzMzAxUQM3MzMzMDFRAzczMzMwMVEAAAAAAAMBTQAAAAAAAwFNAj8L1KFz/U0DNzMzMzPxSQPLSTWIQ4FFA8tJNYhDgUUAB3gIJiotQQM3MzMzM7FBArWnecYpqUUCtad5ximpRQJqZmZmZCVFAmpmZmZkJUUBa9bnaikFRQFr1udqKQVFA","dtype":"float64","shape":[18]}}},"id":"60e8ac28-5f58-41bb-b1e2-a97f2e48e2a9","type":"ColumnDataSource"},{"attributes":{"callback":{"id":"1a7c4130-8a8f-4478-9fe2-9a0e721428df","type":"CustomJS"},"factors":["A","AA","AAL","AAMC"]},"id":"7d4b7f5a-9602-47db-8fd8-092b11509443","type":"FactorRange"},{"attributes":{},"id":"0559bc25-ab22-4292-8a72-9cb57d04d054","type":"SaveTool"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"9ihcj8KVS0AAAAAAAEBLQJqZmZmZWUtA7FG4HoULS0AAAAAAAIBLQJqZmZmZGUtA9ihcj8IVTEAUrkfhenRMQOF6FK5HYUxAH4XrUbgeTEAfhetRuH5MQAAAAAAAgEpAzczMzMyMSkC4HoXrUXhKQB+F61G4PkpAZmZmZmamSkCuR+F6FI5KQAAAAAAAAEtAH4XrUbg+S0DD9Shcj0JKQMP1KFyPAkpA","dtype":"float64","shape":[21]}}},"id":"f60d27b2-f204-48fa-9b44-77838ac05d2f","type":"ColumnDataSource"},{"attributes":{},"id":"2182a22a-b03d-4e48-813e-8c33b9d0fcc4","type":"LinearScale"},{"attributes":{"line_alpha":0.1,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"4af6e763-f4aa-40ec-aac7-f59046a70e72","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"2b496052-95ba-4bf3-94e4-4d44fe43d618","type":"Line"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"e82b2e9f-f92d-4634-935f-a65cb0425f78","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},"ticker":{"id":"bb39fe6d-1c66-46e7-b113-c6c924999c3a","type":"BasicTicker"},"visible":false},"id":"996c50cf-0504-4fef-9532-c98483d0ee53","type":"LinearAxis"},{"attributes":{"overlay":{"id":"5a83dad6-ae62-462c-b1dd-1b20f47dd60b","type":"BoxAnnotation"}},"id":"65ef88c2-9afc-46c2-a096-89105e2aa412","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"7bac8a75-f823-4645-bdd3-357d736d5cc7","type":"ColumnDataSource"},"glyph":{"id":"bcc94ea9-6246-4362-bb63-b3e03a4f2ffa","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"c19d38b8-2a50-4d50-b15e-d1f9d5caf0fe","type":"Line"},"nonselection_glyph":{"id":"4af6e763-f4aa-40ec-aac7-f59046a70e72","type":"Line"},"selection_glyph":null,"view":{"id":"54be3765-d734-4419-9366-d539ea283f4f","type":"CDSView"}},"id":"a1b0eee3-b282-4c1c-8e85-c660665ed1b0","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"04f24017-d84c-4a49-81a4-3e9c3f291dee","type":"Title"},{"attributes":{"plot":null,"text":""},"id":"a335f6f6-be1a-41e4-a1fc-b84a7ca1cf43","type":"Title"},{"attributes":{"toolbar":{"id":"87de771a-6de5-4585-a9a7-cafdf9fda91e","type":"ProxyToolbar"},"toolbar_location":"above"},"id":"c73030be-d3ba-4209-b496-20ce1b8137a9","type":"ToolbarBox"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"d2977c9c-eb25-4314-a8ba-989d2fe489be","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},"ticker":{"id":"ac523ef9-7257-4a14-b73e-8c7e389bde6b","type":"BasicTicker"},"visible":false},"id":"60042780-076e-46be-a967-cb87946ed8f7","type":"LinearAxis"},{"attributes":{},"id":"4bf322e0-96fa-4659-82af-11341a347b2f","type":"WheelZoomTool"},{"attributes":{},"id":"ce83f2f3-092a-49ab-802b-42f765d652d3","type":"CategoricalScale"},{"attributes":{"args":{"range":{"id":"7d4b7f5a-9602-47db-8fd8-092b11509443","type":"FactorRange"}},"code":"range.setv({start: 0, end: range.factors.length})"},"id":"1a7c4130-8a8f-4478-9fe2-9a0e721428df","type":"CustomJS"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"9f172038-70be-4159-8e37-b3f1169b2f88","type":"Title"},{"attributes":{"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"f0af38c6-3576-4149-b8e0-d4ab846d72f2","type":"Line"},{"attributes":{"line_alpha":0.2,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"c19d38b8-2a50-4d50-b15e-d1f9d5caf0fe","type":"Line"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"},"ticker":{"id":"00501c8a-b138-43a1-8029-5d6cb55e479c","type":"CategoricalTicker"}},"id":"7ae07475-18ad-487a-b090-7f13b3119ef5","type":"Grid"},{"attributes":{},"id":"d2977c9c-eb25-4314-a8ba-989d2fe489be","type":"BasicTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"2378188e-8a3f-4862-bcc1-ef9a4495fbe8","type":"BoxAnnotation"},{"attributes":{"line_alpha":0.2,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"c84b471e-d2e5-4fdc-8020-1028acee8676","type":"Line"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"15d34276-00f1-4089-95fb-c3e40bc3844b","type":"Title"},{"attributes":{"below":[{"id":"9791aef2-b6d3-4c2c-a038-97921d71c3c8","type":"CategoricalAxis"}],"left":[{"id":"569cf78b-5370-4513-b80a-902a82978870","type":"LinearAxis"}],"outline_line_alpha":{"value":0},"plot_height":53,"plot_width":800,"renderers":[{"id":"9791aef2-b6d3-4c2c-a038-97921d71c3c8","type":"CategoricalAxis"},{"id":"124425db-8d2e-4c9f-b2fc-dc892d8b9e22","type":"Grid"},{"id":"569cf78b-5370-4513-b80a-902a82978870","type":"LinearAxis"},{"id":"d8f9b74c-04a3-41e0-9bba-9345fd4c33a1","type":"Grid"},{"id":"2378188e-8a3f-4862-bcc1-ef9a4495fbe8","type":"BoxAnnotation"}],"title":{"id":"a335f6f6-be1a-41e4-a1fc-b84a7ca1cf43","type":"Title"},"toolbar":{"id":"bbeee331-ddcc-4da7-a900-129fca80491b","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"7d4b7f5a-9602-47db-8fd8-092b11509443","type":"FactorRange"},"x_scale":{"id":"46809484-db34-4c66-a31d-746becaf38ff","type":"CategoricalScale"},"y_range":{"id":"03c20f64-2325-418a-8250-3982a15fb98f","type":"Range1d"},"y_scale":{"id":"106a3236-6665-4429-8c1e-3bd178aff408","type":"LinearScale"}},"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"b0fa55aa-37b0-4795-abc7-a7623b8d6cb7","type":"CategoricalAxis"}],"left":[{"id":"60042780-076e-46be-a967-cb87946ed8f7","type":"LinearAxis"}],"min_border_bottom":3,"min_border_left":3,"min_border_right":3,"min_border_top":3,"plot_height":120,"plot_width":200,"renderers":[{"id":"b0fa55aa-37b0-4795-abc7-a7623b8d6cb7","type":"CategoricalAxis"},{"id":"cbf7be83-2c41-4f80-8d9a-a23eb7030a49","type":"Grid"},{"id":"60042780-076e-46be-a967-cb87946ed8f7","type":"LinearAxis"},{"id":"4f049535-b7bd-4d55-91fd-c69c470578f5","type":"Grid"},{"id":"0ab7272b-7ec1-40b7-8113-fbb909755374","type":"BoxAnnotation"},{"id":"0f1550e8-330f-453e-9504-71bd7f4d9a54","type":"GlyphRenderer"}],"title":{"id":"9f172038-70be-4159-8e37-b3f1169b2f88","type":"Title"},"toolbar":{"id":"45952ae9-f6b7-4587-b190-0aa7a913b34d","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"79987d0f-71c2-45b5-8b39-d784c8197352","type":"FactorRange"},"x_scale":{"id":"b3284b74-1106-419e-91bd-f4e5c2990195","type":"CategoricalScale"},"y_range":{"id":"09ee7d65-4e80-4790-8a3e-6ed0b9b3cad4","type":"Range1d"},"y_scale":{"id":"2d79e5d5-fdf1-4183-9dde-e67683ace1ab","type":"LinearScale"}},"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"dc220d7a-7bd4-47fc-900f-c2a34141f7e6","type":"LinearScale"},{"attributes":{},"id":"2d79e5d5-fdf1-4183-9dde-e67683ace1ab","type":"LinearScale"},{"attributes":{"overlay":{"id":"3c35610f-de4f-4803-9218-91e4e22746cf","type":"BoxAnnotation"}},"id":"3e6d9220-fa71-42bd-8482-fb8a47bc1ec8","type":"BoxZoomTool"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},"ticker":{"id":"ac523ef9-7257-4a14-b73e-8c7e389bde6b","type":"BasicTicker"}},"id":"4f049535-b7bd-4d55-91fd-c69c470578f5","type":"Grid"},{"attributes":{},"id":"e82b2e9f-f92d-4634-935f-a65cb0425f78","type":"BasicTickFormatter"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"c2889052-9f23-46fe-ba9d-a3f35c581687","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"},"ticker":{"id":"00501c8a-b138-43a1-8029-5d6cb55e479c","type":"CategoricalTicker"},"visible":false},"id":"1dd1c716-7c8b-4f8f-984d-3011c8e694f4","type":"CategoricalAxis"},{"attributes":{"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"f26de116-ff33-4b06-b51d-d85f9eb7ea44","type":"Line"},{"attributes":{},"id":"ac523ef9-7257-4a14-b73e-8c7e389bde6b","type":"BasicTicker"},{"attributes":{"data_source":{"id":"f60d27b2-f204-48fa-9b44-77838ac05d2f","type":"ColumnDataSource"},"glyph":{"id":"f26de116-ff33-4b06-b51d-d85f9eb7ea44","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"c84b471e-d2e5-4fdc-8020-1028acee8676","type":"Line"},"nonselection_glyph":{"id":"2b496052-95ba-4bf3-94e4-4d44fe43d618","type":"Line"},"selection_glyph":null,"view":{"id":"31a29a58-4856-408b-bbf4-1365fd1fb284","type":"CDSView"}},"id":"0f1550e8-330f-453e-9504-71bd7f4d9a54","type":"GlyphRenderer"},{"attributes":{},"id":"106a3236-6665-4429-8c1e-3bd178aff408","type":"LinearScale"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"4dfb2a1a-5e91-4d7d-9623-90627a6b87e8","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},"ticker":{"id":"33cf5f51-c074-4fbb-b333-134dc06d8b66","type":"CategoricalTicker"},"visible":false},"id":"b0fa55aa-37b0-4795-abc7-a7623b8d6cb7","type":"CategoricalAxis"},{"attributes":{},"id":"fdf44910-a124-47ae-a063-b5402031d3bb","type":"SaveTool"},{"attributes":{"children":[{"id":"39650cfc-a47d-4a9d-b843-1a619a25da7c","subtype":"Figure","type":"Plot"},{"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},{"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},{"id":"c2eda267-c6c2-4b5e-a9dc-d45bb9033137","subtype":"Figure","type":"Plot"}]},"id":"09643cba-dfbf-4fd4-8868-ad381e1b9223","type":"Row"},{"attributes":{"source":{"id":"f60d27b2-f204-48fa-9b44-77838ac05d2f","type":"ColumnDataSource"}},"id":"31a29a58-4856-408b-bbf4-1365fd1fb284","type":"CDSView"},{"attributes":{},"id":"38b76bba-2870-442f-9fe0-3aef0000c8ab","type":"CategoricalTicker"},{"attributes":{},"id":"86cc6118-aa5d-4144-8a8c-c849c2c898d1","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"f1175442-d60f-4d70-af11-9a934bd2c195","type":"BasicTickFormatter"},"plot":{"id":"77e742eb-00c0-4c88-b1b7-284d25b1bb76","subtype":"Figure","type":"Plot"},"ticker":{"id":"e815bc25-6be7-4e02-812c-b435219393ba","type":"BasicTicker"},"visible":false},"id":"569cf78b-5370-4513-b80a-902a82978870","type":"LinearAxis"},{"attributes":{},"id":"4dfb2a1a-5e91-4d7d-9623-90627a6b87e8","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"48b6fe8d-42ec-4022-b243-0792c5c3cd22","type":"SaveTool"},{"id":"60e11b5d-a707-4471-a0b2-08bacf0e70e3","type":"PanTool"},{"id":"fe0e40c7-f155-4aa3-9598-d7ce516a7c3d","type":"WheelZoomTool"},{"id":"65ef88c2-9afc-46c2-a096-89105e2aa412","type":"BoxZoomTool"},{"id":"c8aa312f-b1c7-40cf-8a63-f6ae3d4afd7a","type":"ResetTool"}]},"id":"b2990378-ea0e-487f-9f00-e4f957890354","type":"Toolbar"},{"attributes":{"line_alpha":0.1,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"b079d553-cfaa-42aa-9b46-53416237fe31","type":"Line"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"a08bbd1f-384d-42e6-9c26-ca39882b9873","subtype":"Figure","type":"Plot"},"ticker":{"id":"33cf5f51-c074-4fbb-b333-134dc06d8b66","type":"CategoricalTicker"}},"id":"cbf7be83-2c41-4f80-8d9a-a23eb7030a49","type":"Grid"},{"attributes":{"data_source":{"id":"0e682a3b-58b4-462d-a746-1810b0965002","type":"ColumnDataSource"},"glyph":{"id":"b6e678c9-2b23-4de4-8da8-3f1eaaddb326","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"426d3f52-e1d6-44f8-b097-b97a2222ba9b","type":"Line"},"nonselection_glyph":{"id":"7c10ecd6-a2f7-4426-88e2-58e374295e56","type":"Line"},"selection_glyph":null,"view":{"id":"94903b82-cd59-4141-9604-032fffc0b651","type":"CDSView"}},"id":"ebb55f70-d3a0-43f2-9107-a9e09fa852ec","type":"GlyphRenderer"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"4e80f1d3-7660-4ad2-8101-a6c9ff06d3c4","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},"ticker":{"id":"a4a3c38f-b865-47cf-85a6-7474c864462c","type":"CategoricalTicker"},"visible":false},"id":"7df64f67-7281-4ffd-ade4-7dbaf7293643","type":"CategoricalAxis"},{"attributes":{"callback":null,"factors":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"79987d0f-71c2-45b5-8b39-d784c8197352","type":"FactorRange"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"0ab7272b-7ec1-40b7-8113-fbb909755374","type":"BoxAnnotation"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"3620497b-242a-4f8d-bb52-083dd4366134","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"d83de144-37f6-457f-ac42-b005a1ac3237","subtype":"Figure","type":"Plot"},"ticker":{"id":"2344d6cb-3ba5-4c79-8b39-fb7b7e770e39","type":"BasicTicker"},"visible":false},"id":"1f0517d3-c43a-4135-aab4-0f615ae88cba","type":"LinearAxis"},{"attributes":{"source":{"id":"0e682a3b-58b4-462d-a746-1810b0965002","type":"ColumnDataSource"}},"id":"94903b82-cd59-4141-9604-032fffc0b651","type":"CDSView"},{"attributes":{},"id":"3f3c668e-8ea3-4d0b-b430-124ecb48d183","type":"ResetTool"},{"attributes":{"callback":null,"factors":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"60f7d032-340d-4449-aaa1-2592af6cb63a","type":"FactorRange"}],"root_ids":["a9a8b629-18ec-49be-92dc-dc3c5b91053a"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"1e40b652-9752-4c48-816e-7cbfbf2a7086","elementid":"d702f325-6c69-4f16-8948-9f3b5672a50b","modelid":"a9a8b629-18ec-49be-92dc-dc3c5b91053a"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -18796,7 +18795,7 @@ grouped.overlay('Ticker')
 <script type="text/javascript">
   (function(root) {
   function embed_document(root) {
-    
+
   var docs_json = {"536dfeaf-3a35-41b7-8390-604c85001cf5":{"roots":{"references":[{"attributes":{"callback":null,"factors":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"]},"id":"6c013649-09a3-4e9e-b7c8-d6c888d45143","type":"FactorRange"},{"attributes":{"label":{"value":"AA"},"renderers":[{"id":"3b64989a-d051-43d4-bf1e-ca9595ef5691","type":"GlyphRenderer"}]},"id":"277dd3b7-939e-42d6-b627-c8df6c845b0a","type":"LegendItem"},{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"},"ticker":{"id":"052a8ffa-c29b-43c6-90ec-0a2bc59be61f","type":"BasicTicker"}},"id":"64e76ea9-0455-4b81-93cf-959c3b700913","type":"Grid"},{"attributes":{"axis_label":"Date","bounds":"auto","formatter":{"id":"ce6d8572-c6af-40ad-b3d7-237fbd10824f","type":"CategoricalTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"},"ticker":{"id":"e80a1ea2-e730-4fdc-b67a-4ac0e317812e","type":"CategoricalTicker"}},"id":"d49e2660-f70e-43e9-aff3-b98c7cd711cc","type":"CategoricalAxis"},{"attributes":{"label":{"value":"AAL"},"renderers":[{"id":"73f3dbae-f939-41ea-996d-d789b06e106f","type":"GlyphRenderer"}]},"id":"c902a876-1ea7-4039-8619-a30593be94b5","type":"LegendItem"},{"attributes":{"data_source":{"id":"4d455555-db12-46e5-9296-1ff9c1b485fa","type":"ColumnDataSource"},"glyph":{"id":"4e493011-053f-4ce4-86f3-c3e8cbe4cc4f","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"7f474756-1199-4323-a452-5822e4310ecb","type":"Line"},"nonselection_glyph":{"id":"3103a4f4-c6a1-4ed2-9a0f-3ca4a19c304a","type":"Line"},"selection_glyph":null,"view":{"id":"8733ff97-a7d1-47a1-b99d-882dc19f4656","type":"CDSView"}},"id":"32f7bc28-1306-45fb-8c3a-fc0cc353338e","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"32b8a6a8-a9c1-42f5-9a35-26e1168c96d7","type":"ColumnDataSource"},"glyph":{"id":"2bf00859-d5ec-4576-addc-10329ad289f4","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"5818de70-a900-4749-bd62-99237e585546","type":"Line"},"nonselection_glyph":{"id":"5d101ad1-d3d4-4eaa-9f85-a61721e8f646","type":"Line"},"selection_glyph":null,"view":{"id":"8f325110-fabe-4aed-87df-9035db7cd225","type":"CDSView"}},"id":"3b64989a-d051-43d4-bf1e-ca9595ef5691","type":"GlyphRenderer"},{"attributes":{},"id":"8a832788-ef55-40ac-aba7-2c67368644ed","type":"PanTool"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"ZmZmZmbmUEAUrkfhelRRQDMzMzMzM1FAmpmZmZl5UUAzMzMzM4NRQOF6FK5H8VFAw/UoXI+yUUAzMzMzM7NRQB+F61G47lFAH4XrUbjOUUCkcD0K1wNSQFyPwvUoDFJAFK5H4XpEUkAfhetRuF5SQFyPwvUoXFJAhetRuB5lUkDXo3A9CndSQBSuR+F6tFJAUrgeheuhUkCPwvUoXD9SQOxRuB6FW1JA","dtype":"float64","shape":[21]}}},"id":"f7538f57-2071-44d6-ad25-3c83a1be734e","type":"ColumnDataSource"},{"attributes":{"click_policy":"mute","items":[{"id":"a411bc85-8f5e-4257-a077-961459e230b5","type":"LegendItem"},{"id":"277dd3b7-939e-42d6-b627-c8df6c845b0a","type":"LegendItem"},{"id":"c902a876-1ea7-4039-8619-a30593be94b5","type":"LegendItem"},{"id":"76cd33af-fab0-40c0-ab14-b3e6fbdd3c65","type":"LegendItem"}],"plot":{"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"}},"id":"fa8ab96e-b644-45c3-984a-bae834530380","type":"Legend"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-16","2018-01-17","2018-01-18","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"zczMzMx8U0DNzMzMzAxUQM3MzMzMDFRAzczMzMwMVEAAAAAAAMBTQAAAAAAAwFNAj8L1KFz/U0DNzMzMzPxSQPLSTWIQ4FFA8tJNYhDgUUAB3gIJiotQQM3MzMzM7FBArWnecYpqUUCtad5ximpRQJqZmZmZCVFAmpmZmZkJUUBa9bnaikFRQFr1udqKQVFA","dtype":"float64","shape":[18]}}},"id":"4d455555-db12-46e5-9296-1ff9c1b485fa","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.2,"line_color":"#FF7F50","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"7f474756-1199-4323-a452-5822e4310ecb","type":"Line"},{"attributes":{},"id":"c9f239e1-025b-45f8-bd8c-daf3e4960b1e","type":"BasicTickFormatter"},{"attributes":{"line_alpha":0.2,"line_color":"#6A5ACD","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"5818de70-a900-4749-bd62-99237e585546","type":"Line"},{"attributes":{"overlay":{"id":"9d8190b1-d437-43fe-a50a-fd11f4462549","type":"BoxAnnotation"}},"id":"dc8f43c0-7e1e-4a16-a67f-75586663be98","type":"BoxZoomTool"},{"attributes":{"line_alpha":0.1,"line_color":"#20B2AA","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"d0dfcebb-ad2d-411f-8927-5aeed9e809af","type":"Line"},{"attributes":{"data_source":{"id":"fd6cf218-43bd-4c4d-a4d2-60315ce41b29","type":"ColumnDataSource"},"glyph":{"id":"173d2874-8957-4a04-a7f1-6d7377c0428c","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"5b420ebd-b9af-48b9-a86c-ec676d9421cc","type":"Line"},"nonselection_glyph":{"id":"d0dfcebb-ad2d-411f-8927-5aeed9e809af","type":"Line"},"selection_glyph":null,"view":{"id":"98adfccb-6b09-455c-8bab-9900bea66b41","type":"CDSView"}},"id":"73f3dbae-f939-41ea-996d-d789b06e106f","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"H4XrUbh+SkAK16NwPSpKQPYoXI/CVUpAMzMzMzNTSkBxPQrXoxBKQArXo3A9CkpApHA9CtfjSkD2KFyPwjVMQFyPwvUoPE1ArkfhehT+TEAUrkfhehRNQOxRuB6FK01ASOF6FK4HTUDNzMzMzAxNQIXrUbgeJU1AhetRuB5lS0BmZmZmZoZKQClcj8L1iEpA16NwPQpXSkDsUbgehUtKQClcj8L1KEtA","dtype":"float64","shape":[21]}}},"id":"fd6cf218-43bd-4c4d-a4d2-60315ce41b29","type":"ColumnDataSource"},{"attributes":{"line_color":"#20B2AA","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"173d2874-8957-4a04-a7f1-6d7377c0428c","type":"Line"},{"attributes":{"source":{"id":"f7538f57-2071-44d6-ad25-3c83a1be734e","type":"ColumnDataSource"}},"id":"ed95e5a1-d002-48c8-89bc-55cf5e787698","type":"CDSView"},{"attributes":{"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"0a115273-18f4-4fe9-b327-38d5f395b1ef","type":"Line"},{"attributes":{"source":{"id":"fd6cf218-43bd-4c4d-a4d2-60315ce41b29","type":"ColumnDataSource"}},"id":"98adfccb-6b09-455c-8bab-9900bea66b41","type":"CDSView"},{"attributes":{"line_alpha":0.1,"line_color":"#6A5ACD","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"5d101ad1-d3d4-4eaa-9f85-a61721e8f646","type":"Line"},{"attributes":{},"id":"052a8ffa-c29b-43c6-90ec-0a2bc59be61f","type":"BasicTicker"},{"attributes":{},"id":"32bff5fd-9b6b-48a6-9ab1-864855169ea8","type":"LinearScale"},{"attributes":{"plot":null,"text":"","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"bb4f250d-b65c-4a1d-a769-b633e8754bde","type":"Title"},{"attributes":{"line_color":"#FF7F50","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"4e493011-053f-4ce4-86f3-c3e8cbe4cc4f","type":"Line"},{"attributes":{"line_alpha":0.2,"line_color":"#20B2AA","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"5b420ebd-b9af-48b9-a86c-ec676d9421cc","type":"Line"},{"attributes":{},"id":"f9628133-a0b8-4cd8-bcd4-9c1606cb5f57","type":"SaveTool"},{"attributes":{"background_fill_color":{"value":"white"},"below":[{"id":"d49e2660-f70e-43e9-aff3-b98c7cd711cc","type":"CategoricalAxis"}],"left":[{"id":"806e9874-dd34-44df-ba61-bc1ec0601684","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":300,"renderers":[{"id":"d49e2660-f70e-43e9-aff3-b98c7cd711cc","type":"CategoricalAxis"},{"id":"6db9c682-5a6b-4f17-bad5-fb786a0d3855","type":"Grid"},{"id":"806e9874-dd34-44df-ba61-bc1ec0601684","type":"LinearAxis"},{"id":"64e76ea9-0455-4b81-93cf-959c3b700913","type":"Grid"},{"id":"9d8190b1-d437-43fe-a50a-fd11f4462549","type":"BoxAnnotation"},{"id":"fa8ab96e-b644-45c3-984a-bae834530380","type":"Legend"},{"id":"eb191ccb-6da6-484a-b861-478aa679ef38","type":"GlyphRenderer"},{"id":"3b64989a-d051-43d4-bf1e-ca9595ef5691","type":"GlyphRenderer"},{"id":"73f3dbae-f939-41ea-996d-d789b06e106f","type":"GlyphRenderer"},{"id":"32f7bc28-1306-45fb-8c3a-fc0cc353338e","type":"GlyphRenderer"}],"title":{"id":"bb4f250d-b65c-4a1d-a769-b633e8754bde","type":"Title"},"toolbar":{"id":"9bcfeadc-11d3-4046-88ad-81072722750a","type":"Toolbar"},"x_range":{"id":"6c013649-09a3-4e9e-b7c8-d6c888d45143","type":"FactorRange"},"x_scale":{"id":"ec599ed2-0b12-4908-a63c-b4a967e6316b","type":"CategoricalScale"},"y_range":{"id":"1add6815-978f-486c-973a-d6897737078d","type":"Range1d"},"y_scale":{"id":"32bff5fd-9b6b-48a6-9ab1-864855169ea8","type":"LinearScale"}},"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"},{"attributes":{"label":{"value":"AAMC"},"renderers":[{"id":"32f7bc28-1306-45fb-8c3a-fc0cc353338e","type":"GlyphRenderer"}]},"id":"76cd33af-fab0-40c0-ab14-b3e6fbdd3c65","type":"LegendItem"},{"attributes":{"data_source":{"id":"f7538f57-2071-44d6-ad25-3c83a1be734e","type":"ColumnDataSource"},"glyph":{"id":"0a115273-18f4-4fe9-b327-38d5f395b1ef","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"b31c8a6c-be59-40a8-8365-fee95bd29e83","type":"Line"},"nonselection_glyph":{"id":"535f4154-611c-4e1d-b6dd-41877cc051de","type":"Line"},"selection_glyph":null,"view":{"id":"ed95e5a1-d002-48c8-89bc-55cf5e787698","type":"CDSView"}},"id":"eb191ccb-6da6-484a-b861-478aa679ef38","type":"GlyphRenderer"},{"attributes":{"label":{"value":"A"},"renderers":[{"id":"eb191ccb-6da6-484a-b861-478aa679ef38","type":"GlyphRenderer"}]},"id":"a411bc85-8f5e-4257-a077-961459e230b5","type":"LegendItem"},{"attributes":{"callback":null,"end":80.2,"start":52.02},"id":"1add6815-978f-486c-973a-d6897737078d","type":"Range1d"},{"attributes":{"line_alpha":0.1,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"535f4154-611c-4e1d-b6dd-41877cc051de","type":"Line"},{"attributes":{},"id":"ec599ed2-0b12-4908-a63c-b4a967e6316b","type":"CategoricalScale"},{"attributes":{"line_color":"#6A5ACD","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"2bf00859-d5ec-4576-addc-10329ad289f4","type":"Line"},{"attributes":{"source":{"id":"32b8a6a8-a9c1-42f5-9a35-26e1168c96d7","type":"ColumnDataSource"}},"id":"8f325110-fabe-4aed-87df-9035db7cd225","type":"CDSView"},{"attributes":{},"id":"ce6d8572-c6af-40ad-b3d7-237fbd10824f","type":"CategoricalTickFormatter"},{"attributes":{},"id":"e80a1ea2-e730-4fdc-b67a-4ac0e317812e","type":"CategoricalTicker"},{"attributes":{"callback":null,"column_names":["Date","Price"],"data":{"Date":["2018-01-02","2018-01-03","2018-01-04","2018-01-05","2018-01-08","2018-01-09","2018-01-10","2018-01-11","2018-01-12","2018-01-16","2018-01-17","2018-01-18","2018-01-19","2018-01-22","2018-01-23","2018-01-24","2018-01-25","2018-01-26","2018-01-29","2018-01-30","2018-01-31"],"Price":{"__ndarray__":"9ihcj8KVS0AAAAAAAEBLQJqZmZmZWUtA7FG4HoULS0AAAAAAAIBLQJqZmZmZGUtA9ihcj8IVTEAUrkfhenRMQOF6FK5HYUxAH4XrUbgeTEAfhetRuH5MQAAAAAAAgEpAzczMzMyMSkC4HoXrUXhKQB+F61G4PkpAZmZmZmamSkCuR+F6FI5KQAAAAAAAAEtAH4XrUbg+S0DD9Shcj0JKQMP1KFyPAkpA","dtype":"float64","shape":[21]}}},"id":"32b8a6a8-a9c1-42f5-9a35-26e1168c96d7","type":"ColumnDataSource"},{"attributes":{"axis_label":"Stock Input","bounds":"auto","formatter":{"id":"c9f239e1-025b-45f8-bd8c-daf3e4960b1e","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"},"ticker":{"id":"052a8ffa-c29b-43c6-90ec-0a2bc59be61f","type":"BasicTicker"}},"id":"806e9874-dd34-44df-ba61-bc1ec0601684","type":"LinearAxis"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"bea70512-44fb-4fca-b26b-a9fa5149491b","subtype":"Figure","type":"Plot"},"ticker":{"id":"e80a1ea2-e730-4fdc-b67a-4ac0e317812e","type":"CategoricalTicker"}},"id":"6db9c682-5a6b-4f17-bad5-fb786a0d3855","type":"Grid"},{"attributes":{"source":{"id":"4d455555-db12-46e5-9296-1ff9c1b485fa","type":"ColumnDataSource"}},"id":"8733ff97-a7d1-47a1-b99d-882dc19f4656","type":"CDSView"},{"attributes":{"line_alpha":0.2,"line_color":"#CD5C5C","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"b31c8a6c-be59-40a8-8365-fee95bd29e83","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"#FF7F50","line_width":2,"x":{"field":"Date"},"y":{"field":"Price"}},"id":"3103a4f4-c6a1-4ed2-9a0f-3ca4a19c304a","type":"Line"},{"attributes":{},"id":"7c972568-3d3c-4aad-9bb1-5d82a909220d","type":"ResetTool"},{"attributes":{},"id":"f66c1f40-6618-4a5d-b468-ed7874b80fdb","type":"WheelZoomTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"f9628133-a0b8-4cd8-bcd4-9c1606cb5f57","type":"SaveTool"},{"id":"8a832788-ef55-40ac-aba7-2c67368644ed","type":"PanTool"},{"id":"f66c1f40-6618-4a5d-b468-ed7874b80fdb","type":"WheelZoomTool"},{"id":"dc8f43c0-7e1e-4a16-a67f-75586663be98","type":"BoxZoomTool"},{"id":"7c972568-3d3c-4aad-9bb1-5d82a909220d","type":"ResetTool"}]},"id":"9bcfeadc-11d3-4046-88ad-81072722750a","type":"Toolbar"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"9d8190b1-d437-43fe-a50a-fd11f4462549","type":"BoxAnnotation"}],"root_ids":["bea70512-44fb-4fca-b26b-a9fa5149491b"]},"title":"Bokeh Application","version":"0.12.13"}};
   var render_items = [{"docid":"536dfeaf-3a35-41b7-8390-604c85001cf5","elementid":"c7e9efe7-ca23-4b56-abb5-dfe832bd15c5","modelid":"bea70512-44fb-4fca-b26b-a9fa5149491b"}];
   root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
@@ -18836,7 +18835,7 @@ grouped.overlay('Ticker')
 
 
 ```python
-#3.1.B) OBTAIN A DATAFRAME OF CLOSING, OPENING, ADJUSTED CLOSING AND ADJUSTED OPENING PRICRES FROM THE LAST MONTH FOR EACH TICKER 
+#3.1.B) OBTAIN A DATAFRAME OF CLOSING, OPENING, ADJUSTED CLOSING AND ADJUSTED OPENING PRICRES FROM THE LAST MONTH FOR EACH TICKER
 
 #Select last  month prices
 
@@ -19980,10 +19979,10 @@ out
 
 
 ```python
-dfs['Open Price'] = dfs['Open Price'].fillna(dfs['Open Price'].mean())  
-dfs['Close Price'] = dfs['Close Price'].fillna(dfs['Close Price'].mean())      
-dfs['Adj Open Price'] = dfs['Adj Open Price'].fillna(dfs['Adj Open Price'].mean())  
-dfs['Adj Close Price'] = dfs['Adj Close Price'].fillna(dfs['Adj Close Price'].mean())     
+dfs['Open Price'] = dfs['Open Price'].fillna(dfs['Open Price'].mean())
+dfs['Close Price'] = dfs['Close Price'].fillna(dfs['Close Price'].mean())
+dfs['Adj Open Price'] = dfs['Adj Open Price'].fillna(dfs['Adj Open Price'].mean())
+dfs['Adj Close Price'] = dfs['Adj Close Price'].fillna(dfs['Adj Close Price'].mean())
 
 dfs=dfs[['Open Price', 'Close Price', 'Adj Open Price', 'Adj Close Price']]
 ```
@@ -19996,61 +19995,61 @@ dfs=dfs[['Open Price', 'Close Price', 'Adj Open Price', 'Adj Close Price']]
 
 dfill = (dfs.groupby('Ticker').apply(lambda g:g.set_index('Date') [['Open Price', 'Close Price', 'Adj Open Price', 'Adj Close Price']]).unstack(level=0).fillna(dfs['Close Price'].mean()))
 
-#Delete column and adjust the multi-index column 
+#Delete column and adjust the multi-index column
 
-dfill.columns=dfill.columns.droplevel()  
+dfill.columns=dfill.columns.droplevel()
 print dfill
 
 ```
 
     Ticker          A     AA    AAL       AAMC      A     AA     AAL       AAMC  \
-    Date                                                                          
-    2018-01-02  67.42  54.06  52.33  63.298085  67.60  55.17  52.990  63.298085   
-    2018-01-03  67.62  54.92  52.86  77.950000  69.32  54.50  52.330  77.950000   
-    2018-01-04  69.54  54.81  52.48  80.200000  68.80  54.70  52.670  80.200000   
-    2018-01-05  68.73  54.65  52.78  80.200000  69.90  54.09  52.650  80.200000   
-    2018-01-08  69.73  53.96  52.60  80.200000  70.05  55.00  52.130  80.200000   
-    2018-01-09  70.68  55.00  52.97  79.000000  71.77  54.20  52.080  79.000000   
-    2018-01-10  71.45  54.37  53.23  79.000000  70.79  56.17  53.780  79.000000   
-    2018-01-11  70.92  56.60  54.49  79.990000  70.80  56.91  56.420  79.990000   
-    2018-01-12  70.73  57.05  56.56  63.298085  71.73  56.76  58.470  63.298085   
-    2018-01-16  72.02  56.09  58.79  75.950000  71.23  56.24  57.985  75.950000   
-    2018-01-17  71.72  56.03  58.31  71.501000  72.06  56.99  58.160  71.501000   
-    2018-01-18  72.20  53.67  58.00  71.501000  72.19  53.00  58.340  71.501000   
-    2018-01-19  72.48  52.86  58.59  63.298085  73.07  53.10  58.060  63.298085   
-    2018-01-22  73.17  52.80  57.99  69.400000  73.48  52.94  58.100  66.180300   
-    2018-01-23  74.05  52.34  57.74  67.700000  73.44  52.49  58.290  67.700000   
-    2018-01-24  73.66  52.90  54.35  69.650000  73.58  53.30  54.790  69.664700   
-    2018-01-25  74.17  53.74  54.00  69.664700  73.86  53.11  53.050  69.664700   
-    2018-01-26  74.30  53.55  53.65  67.900000  74.82  54.00  53.070  68.150000   
-    2018-01-29  74.48  53.89  52.79  68.150000  74.53  54.49  52.680  68.150000   
-    2018-01-30  73.99  53.67  52.45  66.950000  72.99  52.52  52.590  69.024100   
-    2018-01-31  73.77  52.75  53.08  69.024100  73.43  52.02  54.320  69.024100   
-    
-    Ticker          A     AA    AAL       AAMC      A     AA     AAL       AAMC  
-    Date                                                                         
-    2018-01-02  67.42  54.06  52.33  63.298085  67.60  55.17  52.990  63.298085  
-    2018-01-03  67.62  54.92  52.86  77.950000  69.32  54.50  52.330  77.950000  
-    2018-01-04  69.54  54.81  52.48  80.200000  68.80  54.70  52.670  80.200000  
-    2018-01-05  68.73  54.65  52.78  80.200000  69.90  54.09  52.650  80.200000  
-    2018-01-08  69.73  53.96  52.60  80.200000  70.05  55.00  52.130  80.200000  
-    2018-01-09  70.68  55.00  52.97  79.000000  71.77  54.20  52.080  79.000000  
-    2018-01-10  71.45  54.37  53.23  79.000000  70.79  56.17  53.780  79.000000  
-    2018-01-11  70.92  56.60  54.49  79.990000  70.80  56.91  56.420  79.990000  
-    2018-01-12  70.73  57.05  56.56  63.298085  71.73  56.76  58.470  63.298085  
-    2018-01-16  72.02  56.09  58.79  75.950000  71.23  56.24  57.985  75.950000  
-    2018-01-17  71.72  56.03  58.31  71.501000  72.06  56.99  58.160  71.501000  
-    2018-01-18  72.20  53.67  58.00  71.501000  72.19  53.00  58.340  71.501000  
-    2018-01-19  72.48  52.86  58.59  63.298085  73.07  53.10  58.060  63.298085  
-    2018-01-22  73.17  52.80  57.99  69.400000  73.48  52.94  58.100  66.180300  
-    2018-01-23  74.05  52.34  57.74  67.700000  73.44  52.49  58.290  67.700000  
-    2018-01-24  73.66  52.90  54.35  69.650000  73.58  53.30  54.790  69.664700  
-    2018-01-25  74.17  53.74  54.00  69.664700  73.86  53.11  53.050  69.664700  
-    2018-01-26  74.30  53.55  53.65  67.900000  74.82  54.00  53.070  68.150000  
-    2018-01-29  74.48  53.89  52.79  68.150000  74.53  54.49  52.680  68.150000  
-    2018-01-30  73.99  53.67  52.45  66.950000  72.99  52.52  52.590  69.024100  
-    2018-01-31  73.77  52.75  53.08  69.024100  73.43  52.02  54.320  69.024100  
-    
+    Date
+    2018-01-02  67.42  54.06  52.33  63.298085  67.60  55.17  52.990  63.298085
+    2018-01-03  67.62  54.92  52.86  77.950000  69.32  54.50  52.330  77.950000
+    2018-01-04  69.54  54.81  52.48  80.200000  68.80  54.70  52.670  80.200000
+    2018-01-05  68.73  54.65  52.78  80.200000  69.90  54.09  52.650  80.200000
+    2018-01-08  69.73  53.96  52.60  80.200000  70.05  55.00  52.130  80.200000
+    2018-01-09  70.68  55.00  52.97  79.000000  71.77  54.20  52.080  79.000000
+    2018-01-10  71.45  54.37  53.23  79.000000  70.79  56.17  53.780  79.000000
+    2018-01-11  70.92  56.60  54.49  79.990000  70.80  56.91  56.420  79.990000
+    2018-01-12  70.73  57.05  56.56  63.298085  71.73  56.76  58.470  63.298085
+    2018-01-16  72.02  56.09  58.79  75.950000  71.23  56.24  57.985  75.950000
+    2018-01-17  71.72  56.03  58.31  71.501000  72.06  56.99  58.160  71.501000
+    2018-01-18  72.20  53.67  58.00  71.501000  72.19  53.00  58.340  71.501000
+    2018-01-19  72.48  52.86  58.59  63.298085  73.07  53.10  58.060  63.298085
+    2018-01-22  73.17  52.80  57.99  69.400000  73.48  52.94  58.100  66.180300
+    2018-01-23  74.05  52.34  57.74  67.700000  73.44  52.49  58.290  67.700000
+    2018-01-24  73.66  52.90  54.35  69.650000  73.58  53.30  54.790  69.664700
+    2018-01-25  74.17  53.74  54.00  69.664700  73.86  53.11  53.050  69.664700
+    2018-01-26  74.30  53.55  53.65  67.900000  74.82  54.00  53.070  68.150000
+    2018-01-29  74.48  53.89  52.79  68.150000  74.53  54.49  52.680  68.150000
+    2018-01-30  73.99  53.67  52.45  66.950000  72.99  52.52  52.590  69.024100
+    2018-01-31  73.77  52.75  53.08  69.024100  73.43  52.02  54.320  69.024100
+
+    Ticker          A     AA    AAL       AAMC      A     AA     AAL       AAMC
+    Date
+    2018-01-02  67.42  54.06  52.33  63.298085  67.60  55.17  52.990  63.298085
+    2018-01-03  67.62  54.92  52.86  77.950000  69.32  54.50  52.330  77.950000
+    2018-01-04  69.54  54.81  52.48  80.200000  68.80  54.70  52.670  80.200000
+    2018-01-05  68.73  54.65  52.78  80.200000  69.90  54.09  52.650  80.200000
+    2018-01-08  69.73  53.96  52.60  80.200000  70.05  55.00  52.130  80.200000
+    2018-01-09  70.68  55.00  52.97  79.000000  71.77  54.20  52.080  79.000000
+    2018-01-10  71.45  54.37  53.23  79.000000  70.79  56.17  53.780  79.000000
+    2018-01-11  70.92  56.60  54.49  79.990000  70.80  56.91  56.420  79.990000
+    2018-01-12  70.73  57.05  56.56  63.298085  71.73  56.76  58.470  63.298085
+    2018-01-16  72.02  56.09  58.79  75.950000  71.23  56.24  57.985  75.950000
+    2018-01-17  71.72  56.03  58.31  71.501000  72.06  56.99  58.160  71.501000
+    2018-01-18  72.20  53.67  58.00  71.501000  72.19  53.00  58.340  71.501000
+    2018-01-19  72.48  52.86  58.59  63.298085  73.07  53.10  58.060  63.298085
+    2018-01-22  73.17  52.80  57.99  69.400000  73.48  52.94  58.100  66.180300
+    2018-01-23  74.05  52.34  57.74  67.700000  73.44  52.49  58.290  67.700000
+    2018-01-24  73.66  52.90  54.35  69.650000  73.58  53.30  54.790  69.664700
+    2018-01-25  74.17  53.74  54.00  69.664700  73.86  53.11  53.050  69.664700
+    2018-01-26  74.30  53.55  53.65  67.900000  74.82  54.00  53.070  68.150000
+    2018-01-29  74.48  53.89  52.79  68.150000  74.53  54.49  52.680  68.150000
+    2018-01-30  73.99  53.67  52.45  66.950000  72.99  52.52  52.590  69.024100
+    2018-01-31  73.77  52.75  53.08  69.024100  73.43  52.02  54.320  69.024100
+
 
 
 ```python
@@ -20789,11 +20788,11 @@ out.columns
 
 
 ```python
-#Show summary statistics 
+#Show summary statistics
 
 print out.describe()
 
-#Calculate/plot mean-error values of each Ticker   
+#Calculate/plot mean-error values of each Ticker
 
 mean = out.mean()
 error = out.std()
@@ -20802,54 +20801,54 @@ error
 ```
 
     Ticker               A                                                    AA  \
-    Price  Adj Close Price Adj Open Price Close Price Open Price Adj Close Price   
-    count        21.000000      21.000000   21.000000  21.000000       21.000000   
-    mean         71.753810      71.878095   71.753810  71.878095       54.271905   
-    std           2.208258       1.963269    2.208258   1.963269        1.319730   
-    min          67.420000      67.600000   67.420000  67.600000       52.340000   
-    25%          70.680000      70.790000   70.680000  70.790000       53.550000   
-    50%          72.020000      72.060000   72.020000  72.060000       53.960000   
-    75%          73.770000      73.440000   73.770000  73.440000       54.920000   
-    max          74.480000      74.820000   74.480000  74.820000       57.050000   
-    
+    Price  Adj Close Price Adj Open Price Close Price Open Price Adj Close Price
+    count        21.000000      21.000000   21.000000  21.000000       21.000000
+    mean         71.753810      71.878095   71.753810  71.878095       54.271905
+    std           2.208258       1.963269    2.208258   1.963269        1.319730
+    min          67.420000      67.600000   67.420000  67.600000       52.340000
+    25%          70.680000      70.790000   70.680000  70.790000       53.550000
+    50%          72.020000      72.060000   72.020000  72.060000       53.960000
+    75%          73.770000      73.440000   73.770000  73.440000       54.920000
+    max          74.480000      74.820000   74.480000  74.820000       57.050000
+
     Ticker                                                   AAL                 \
-    Price  Adj Open Price Close Price Open Price Adj Close Price Adj Open Price   
-    count       21.000000   21.000000  21.000000       21.000000      21.000000   
-    mean        54.366667   54.271905  54.366667       54.763810      54.902619   
-    std          1.548106    1.319730   1.548106        2.444354       2.581703   
-    min         52.020000   52.340000  52.020000       52.330000      52.080000   
-    25%         53.100000   53.550000  53.100000       52.790000      52.670000   
-    50%         54.200000   53.960000  54.200000       53.650000      53.780000   
-    75%         55.170000   54.920000  55.170000       57.740000      58.060000   
-    max         56.990000   57.050000  56.990000       58.790000      58.470000   
-    
+    Price  Adj Open Price Close Price Open Price Adj Close Price Adj Open Price
+    count       21.000000   21.000000  21.000000       21.000000      21.000000
+    mean        54.366667   54.271905  54.366667       54.763810      54.902619
+    std          1.548106    1.319730   1.548106        2.444354       2.581703
+    min         52.020000   52.340000  52.020000       52.330000      52.080000
+    25%         53.100000   53.550000  53.100000       52.790000      52.670000
+    50%         54.200000   53.960000  54.200000       53.650000      53.780000
+    75%         55.170000   54.920000  55.170000       57.740000      58.060000
+    max         56.990000   57.050000  56.990000       58.790000      58.470000
+
     Ticker                                   AAMC                             \
-    Price  Close Price Open Price Adj Close Price Adj Open Price Close Price   
-    count    21.000000  21.000000       21.000000      21.000000   21.000000   
-    mean     54.763810  54.902619       72.075207      72.033259   72.075207   
-    std       2.444354   2.581703        6.118120       6.152761    6.118120   
-    min      52.330000  52.080000       63.216183      63.216183   63.216183   
-    25%      52.790000  52.670000       67.900000      68.150000   67.900000   
-    50%      53.650000  53.780000       69.664700      69.664700   69.664700   
-    75%      57.740000  58.060000       79.000000      79.000000   79.000000   
-    max      58.790000  58.470000       80.200000      80.200000   80.200000   
-    
-    Ticker             
-    Price  Open Price  
-    count   21.000000  
-    mean    72.033259  
-    std      6.152761  
-    min     63.216183  
-    25%     68.150000  
-    50%     69.664700  
-    75%     79.000000  
-    max     80.200000  
-    
+    Price  Close Price Open Price Adj Close Price Adj Open Price Close Price
+    count    21.000000  21.000000       21.000000      21.000000   21.000000
+    mean     54.763810  54.902619       72.075207      72.033259   72.075207
+    std       2.444354   2.581703        6.118120       6.152761    6.118120
+    min      52.330000  52.080000       63.216183      63.216183   63.216183
+    25%      52.790000  52.670000       67.900000      68.150000   67.900000
+    50%      53.650000  53.780000       69.664700      69.664700   69.664700
+    75%      57.740000  58.060000       79.000000      79.000000   79.000000
+    max      58.790000  58.470000       80.200000      80.200000   80.200000
+
+    Ticker
+    Price  Open Price
+    count   21.000000
+    mean    72.033259
+    std      6.152761
+    min     63.216183
+    25%     68.150000
+    50%     69.664700
+    75%     79.000000
+    max     80.200000
 
 
 
 
-    Ticker  Price          
+
+    Ticker  Price
     A       Adj Close Price    2.208258
             Adj Open Price     1.963269
             Close Price        2.208258
@@ -20886,7 +20885,7 @@ mean.plot.bar(yerr=error, ax=ax)
 
 
 
-![png](output_86_1.png)
+![png](MILESTONE/images/output_86_1.png)
 
 
 
@@ -20902,7 +20901,7 @@ out.plot.area(stacked=False,figsize=(11, 8))
 
 
 
-![png](output_87_1.png)
+![png](MILESTONE/images/output_87_1.png)
 
 
 
@@ -20933,7 +20932,7 @@ out.plot(subplots=True, figsize=(10, 10))
 
 
 
-![png](output_88_1.png)
+![png](MILESTONE/images/output_88_1.png)
 
 
 
@@ -20954,7 +20953,7 @@ out.plot(colormap=cm.cubehelix,figsize=(12, 7))
 
 
 
-![png](output_89_2.png)
+![png](MILESTONE/images/output_89_2.png)
 
 
 
@@ -21612,7 +21611,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 
   <img src='data:image/png;base64,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'
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
   <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -21667,7 +21666,7 @@ mhrfO3fufECS5GHXnf8pAAAAHMfdURTdimGYPjExsTo0NHTyj2ynEplMxurs7HyHIAiKJMlSHMct
 U9k9N2vl5+cH0en0TRiGWX18fC65vnh+LxqNBq2oqFhgMpmi7XY7arVaj+zdu/fxn/l/4bSZl5fH
 5nK5CQAQMtXznCRJePpEbwOAZhzHX4ix/wHzzC/tu64gcwAAAABJRU5ErkJggg=='
        style='height:15px; border-radius:12px; display: inline-block; float: left'></img>
-  
+
 
 
 </div>
@@ -21686,7 +21685,7 @@ dfs
 #3.2.2. or:
 
 #r = requests.get('https://www.quandl.com/api/v3/datatables/WIKI/PRICES.json?qopts.columns=ticker,date,open,close,adj_open,adj_close&date=2018-1-1,2018-1-2,2018-1-3,2018-1-4,2018-1-5,2018-1-6,2018-1-7,2018-1-8,2018-1-9,2018-1-10,2018-1-11,2018-1-12,2018-1-13,2018-1-14,2018-1-15,2018-1-16,2018-1-17,2018-1-18,2018-1-19,2018-1-20,2018-1-21,2018-1-22,2018-1-23,2018-1-24,2018-1-25,2018-1-26,2018-1-27,2018-1-28,2018-1-29,2018-1-30,2018-1-31&api_key=MhSyqwHb1N6rn5JiB7QF')
-#qt = r.json() 
+#qt = r.json()
 ```
 
 
@@ -22328,89 +22327,89 @@ dfsd1
 
 outg = (dfs.groupby('ticker').apply(lambda g:g.set_index('date')[['open','close','adj_open','adj_close']]).unstack(level=0).fillna(dfs['close'].mean()))
 
-#Delete column and adjust the multi-index column 
+#Delete column and adjust the multi-index column
 
 print outg
 
 ```
 
                  open                                                         \
-    ticker          A     AA    AAL        AAMC    AAN   AAOI   AAON     AAP   
-    date                                                                       
-    2018-01-02  67.42  54.06  52.33  724.662246  39.81  37.80  36.95  100.90   
-    2018-01-03  67.62  54.92  52.86   77.950000  39.43  38.27  36.95  106.42   
-    2018-01-04  69.54  54.81  52.48   80.200000  39.98  37.95  37.70  107.75   
-    2018-01-05  68.73  54.65  52.78   80.200000  39.85  38.70  37.55  111.96   
-    2018-01-08  69.73  53.96  52.60   80.200000  39.83  38.90  37.95  112.05   
-    2018-01-09  70.68  55.00  52.97   79.000000  40.82  38.14  37.45  111.69   
-    2018-01-10  71.45  54.37  53.23   79.000000  40.09  35.04  36.90  110.27   
-    2018-01-11  70.92  56.60  54.49   79.990000  39.16  35.37  36.15  110.70   
-    2018-01-12  70.73  57.05  56.56  724.662246  41.19  36.31  36.40  114.38   
-    2018-01-16  72.02  56.09  58.79   75.950000  41.54  35.69  36.75  116.76   
-    2018-01-17  71.72  56.03  58.31   71.501000  41.48  34.00  36.30  114.74   
-    2018-01-18  72.20  53.67  58.00   71.501000  40.42  33.73  36.25  115.67   
-    2018-01-19  72.48  52.86  58.59  724.662246  40.60  34.87  36.10  116.24   
-    2018-01-22  73.17  52.80  57.99   69.400000  42.08  34.98  37.20  116.88   
-    2018-01-23  74.05  52.34  57.74   67.700000  42.30  34.42  36.30  117.74   
-    2018-01-24  73.66  52.90  54.35   69.650000  41.19  34.92  36.20  119.26   
-    2018-01-25  74.17  53.74  54.00   69.664700  41.80  34.32  36.10  121.12   
-    2018-01-26  74.30  53.55  53.65   67.900000  41.86  34.91  36.20  123.34   
-    2018-01-29  74.48  53.89  52.79   68.150000  42.50  34.63  36.10  123.52   
-    2018-01-30  73.99  53.67  52.45   66.950000  41.39  32.74  36.00  121.57   
-    2018-01-31  73.77  52.75  53.08   69.024100  42.13  33.01  36.20  119.86   
-    
+    ticker          A     AA    AAL        AAMC    AAN   AAOI   AAON     AAP
+    date
+    2018-01-02  67.42  54.06  52.33  724.662246  39.81  37.80  36.95  100.90
+    2018-01-03  67.62  54.92  52.86   77.950000  39.43  38.27  36.95  106.42
+    2018-01-04  69.54  54.81  52.48   80.200000  39.98  37.95  37.70  107.75
+    2018-01-05  68.73  54.65  52.78   80.200000  39.85  38.70  37.55  111.96
+    2018-01-08  69.73  53.96  52.60   80.200000  39.83  38.90  37.95  112.05
+    2018-01-09  70.68  55.00  52.97   79.000000  40.82  38.14  37.45  111.69
+    2018-01-10  71.45  54.37  53.23   79.000000  40.09  35.04  36.90  110.27
+    2018-01-11  70.92  56.60  54.49   79.990000  39.16  35.37  36.15  110.70
+    2018-01-12  70.73  57.05  56.56  724.662246  41.19  36.31  36.40  114.38
+    2018-01-16  72.02  56.09  58.79   75.950000  41.54  35.69  36.75  116.76
+    2018-01-17  71.72  56.03  58.31   71.501000  41.48  34.00  36.30  114.74
+    2018-01-18  72.20  53.67  58.00   71.501000  40.42  33.73  36.25  115.67
+    2018-01-19  72.48  52.86  58.59  724.662246  40.60  34.87  36.10  116.24
+    2018-01-22  73.17  52.80  57.99   69.400000  42.08  34.98  37.20  116.88
+    2018-01-23  74.05  52.34  57.74   67.700000  42.30  34.42  36.30  117.74
+    2018-01-24  73.66  52.90  54.35   69.650000  41.19  34.92  36.20  119.26
+    2018-01-25  74.17  53.74  54.00   69.664700  41.80  34.32  36.10  121.12
+    2018-01-26  74.30  53.55  53.65   67.900000  41.86  34.91  36.20  123.34
+    2018-01-29  74.48  53.89  52.79   68.150000  42.50  34.63  36.10  123.52
+    2018-01-30  73.99  53.67  52.45   66.950000  41.39  32.74  36.00  121.57
+    2018-01-31  73.77  52.75  53.08   69.024100  42.13  33.01  36.20  119.86
+
                                    ...     adj_close                               \
-    ticker         AAPL    AAT     ...          CLVS    CLW     CLX    CMA    CMC   
-    date                           ...                                              
-    2018-01-02  170.160  38.30     ...         66.05  46.20  144.99  86.57  22.77   
-    2018-01-03  172.530  38.19     ...         66.64  46.15  143.43  86.54  24.30   
-    2018-01-04  172.540  37.81     ...         67.72  46.80  145.69  87.51  24.48   
-    2018-01-05  173.440  37.15     ...         66.49  48.40  145.73  88.47  24.90   
-    2018-01-08  174.350  37.11     ...         62.98  49.80  146.44  88.72  25.28   
-    2018-01-09  174.550  37.20     ...         62.01  50.15  146.16  90.37  25.04   
-    2018-01-10  173.160  36.37     ...         62.78  49.35  144.43  91.31  25.27   
-    2018-01-11  174.590  36.36     ...         59.88  50.30  141.99  92.52  25.82   
-    2018-01-12  176.180  36.34     ...         59.01  49.40  140.96  93.04  25.16   
-    2018-01-16  177.900  36.16     ...         55.41  47.85  142.41  93.79  24.59   
-    2018-01-17  176.150  36.18     ...         54.93  49.20  144.32  94.76  24.84   
-    2018-01-18  179.370  36.27     ...         55.87  49.20  143.14  93.81  25.09   
-    2018-01-19  178.610  35.73     ...         56.76  50.25  143.86  94.99  24.82   
-    2018-01-22  177.300  36.22     ...         60.67  49.50  144.48  95.21  25.02   
-    2018-01-23  177.300  36.40     ...         64.10  49.05  143.52  95.25  24.88   
-    2018-01-24  177.250  36.61     ...         61.25  48.30  142.25  95.53  24.99   
-    2018-01-25  174.505  36.24     ...         61.40  47.60  146.13  94.70  24.87   
-    2018-01-26  172.000  36.25     ...         61.75  47.35  142.64  95.81  25.27   
-    2018-01-29  170.160  35.63     ...         62.39  46.90  140.96  95.15  25.26   
-    2018-01-30  165.525  34.90     ...         60.97  47.60  141.76  94.76  24.55   
-    2018-01-31  166.870  34.99     ...         60.50  47.05  141.69  95.22  24.04   
-    
-                                                          
-    ticker       CMCO  CMCSA     CME     CMG         CMI  
-    date                                                  
-    2018-01-02  41.15  41.07  144.79  292.95  177.060000  
-    2018-01-03  40.81  40.41  147.11  309.00  179.010000  
-    2018-01-04  40.66  40.67  148.68  307.11  181.750000  
-    2018-01-05  40.28  41.04  149.65  313.79  181.460000  
-    2018-01-08  41.38  40.48  151.73  318.47  182.120000  
-    2018-01-09  43.54  40.61  152.63  319.37  181.960000  
-    2018-01-10  42.60  41.09  152.90  321.80  180.560000  
-    2018-01-11  43.00  42.60  152.81  325.50  183.900000  
-    2018-01-12  42.91  42.44  152.73  327.34  184.180000  
-    2018-01-16  42.47  41.82  152.20  327.37  182.550000  
-    2018-01-17  42.82  41.68  151.45  334.63  183.690000  
-    2018-01-18  42.79  41.85  152.21  337.53  183.720000  
-    2018-01-19  44.42  42.50  154.28  343.87  189.080000  
-    2018-01-22  44.25  42.89  155.45  330.00  189.580000  
-    2018-01-23  43.17  42.44  154.25  328.71  188.430000  
-    2018-01-24  42.57  42.99  154.99  329.53  188.350000  
-    2018-01-25  42.44  42.14  154.17  333.97  189.400000  
-    2018-01-26  42.05  42.80  155.16  330.23  192.500000  
-    2018-01-29  41.81  41.98  153.45  332.33  190.810000  
-    2018-01-30  41.41  42.34  153.33  322.08  187.250000  
-    2018-01-31  40.95  42.53  153.48  324.76  724.662246  
-    
+    ticker         AAPL    AAT     ...          CLVS    CLW     CLX    CMA    CMC
+    date                           ...
+    2018-01-02  170.160  38.30     ...         66.05  46.20  144.99  86.57  22.77
+    2018-01-03  172.530  38.19     ...         66.64  46.15  143.43  86.54  24.30
+    2018-01-04  172.540  37.81     ...         67.72  46.80  145.69  87.51  24.48
+    2018-01-05  173.440  37.15     ...         66.49  48.40  145.73  88.47  24.90
+    2018-01-08  174.350  37.11     ...         62.98  49.80  146.44  88.72  25.28
+    2018-01-09  174.550  37.20     ...         62.01  50.15  146.16  90.37  25.04
+    2018-01-10  173.160  36.37     ...         62.78  49.35  144.43  91.31  25.27
+    2018-01-11  174.590  36.36     ...         59.88  50.30  141.99  92.52  25.82
+    2018-01-12  176.180  36.34     ...         59.01  49.40  140.96  93.04  25.16
+    2018-01-16  177.900  36.16     ...         55.41  47.85  142.41  93.79  24.59
+    2018-01-17  176.150  36.18     ...         54.93  49.20  144.32  94.76  24.84
+    2018-01-18  179.370  36.27     ...         55.87  49.20  143.14  93.81  25.09
+    2018-01-19  178.610  35.73     ...         56.76  50.25  143.86  94.99  24.82
+    2018-01-22  177.300  36.22     ...         60.67  49.50  144.48  95.21  25.02
+    2018-01-23  177.300  36.40     ...         64.10  49.05  143.52  95.25  24.88
+    2018-01-24  177.250  36.61     ...         61.25  48.30  142.25  95.53  24.99
+    2018-01-25  174.505  36.24     ...         61.40  47.60  146.13  94.70  24.87
+    2018-01-26  172.000  36.25     ...         61.75  47.35  142.64  95.81  25.27
+    2018-01-29  170.160  35.63     ...         62.39  46.90  140.96  95.15  25.26
+    2018-01-30  165.525  34.90     ...         60.97  47.60  141.76  94.76  24.55
+    2018-01-31  166.870  34.99     ...         60.50  47.05  141.69  95.22  24.04
+
+
+    ticker       CMCO  CMCSA     CME     CMG         CMI
+    date
+    2018-01-02  41.15  41.07  144.79  292.95  177.060000
+    2018-01-03  40.81  40.41  147.11  309.00  179.010000
+    2018-01-04  40.66  40.67  148.68  307.11  181.750000
+    2018-01-05  40.28  41.04  149.65  313.79  181.460000
+    2018-01-08  41.38  40.48  151.73  318.47  182.120000
+    2018-01-09  43.54  40.61  152.63  319.37  181.960000
+    2018-01-10  42.60  41.09  152.90  321.80  180.560000
+    2018-01-11  43.00  42.60  152.81  325.50  183.900000
+    2018-01-12  42.91  42.44  152.73  327.34  184.180000
+    2018-01-16  42.47  41.82  152.20  327.37  182.550000
+    2018-01-17  42.82  41.68  151.45  334.63  183.690000
+    2018-01-18  42.79  41.85  152.21  337.53  183.720000
+    2018-01-19  44.42  42.50  154.28  343.87  189.080000
+    2018-01-22  44.25  42.89  155.45  330.00  189.580000
+    2018-01-23  43.17  42.44  154.25  328.71  188.430000
+    2018-01-24  42.57  42.99  154.99  329.53  188.350000
+    2018-01-25  42.44  42.14  154.17  333.97  189.400000
+    2018-01-26  42.05  42.80  155.16  330.23  192.500000
+    2018-01-29  41.81  41.98  153.45  332.33  190.810000
+    2018-01-30  41.41  42.34  153.33  322.08  187.250000
+    2018-01-31  40.95  42.53  153.48  324.76  724.662246
+
     [21 rows x 1908 columns]
-    
+
 
 
 ```python
@@ -22431,7 +22430,7 @@ ds.to(hv.Curve, 'open')
 
     <ipython-input-157-8795b07a8357> in <module>()
     ----> 1 ds.to(hv.Curve, 'open')
-    
+
 
     /opt/conda/lib/python2.7/site-packages/holoviews/core/data/__init__.pyc in __call__(self, new_type, kdims, vdims, groupby, sort, **kwargs)
         141             return element.sort() if sort else element
@@ -22439,15 +22438,15 @@ ds.to(hv.Curve, 'open')
     --> 143                                  group_type=new_type, **params)
         144         if sort:
         145             return group.map(lambda x: x.sort(), [new_type])
-    
+
 
     /opt/conda/lib/python2.7/site-packages/holoviews/core/data/__init__.pyc in groupby(self, dimensions, container_type, group_type, dynamic, **kwargs)
-        534 
+        534
         535         return self.interface.groupby(self, dim_names, container_type,
     --> 536                                       group_type, **kwargs)
-        537 
+        537
         538     def __len__(self):
-    
+
 
     /opt/conda/lib/python2.7/site-packages/holoviews/core/data/pandas.pyc in groupby(cls, columns, dimensions, container_type, group_type, **kwargs)
         152         group_by = [d.name for d in index_dims]
@@ -22455,39 +22454,39 @@ ds.to(hv.Curve, 'open')
     --> 154                 columns.data.groupby(group_by, sort=False)]
         155         if issubclass(container_type, NdMapping):
         156             with item_check(False):
-    
+
 
     /opt/conda/lib/python2.7/site-packages/pandas/core/generic.pyc in groupby(self, by, axis, level, as_index, sort, group_keys, squeeze, **kwargs)
        4269         return groupby(self, by=by, axis=axis, level=level, as_index=as_index,
        4270                        sort=sort, group_keys=group_keys, squeeze=squeeze,
     -> 4271                        **kwargs)
-       4272 
+       4272
        4273     def asfreq(self, freq, method=None, how=None, normalize=False,
-    
+
 
     /opt/conda/lib/python2.7/site-packages/pandas/core/groupby.pyc in groupby(obj, by, **kwds)
        1624         raise TypeError('invalid type: %s' % type(obj))
-       1625 
+       1625
     -> 1626     return klass(obj, by, **kwds)
-       1627 
-       1628 
-    
+       1627
+       1628
+
 
     /opt/conda/lib/python2.7/site-packages/pandas/core/groupby.pyc in __init__(self, obj, keys, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, squeeze, **kwargs)
         390                                                     level=level,
         391                                                     sort=sort,
     --> 392                                                     mutated=self.mutated)
-        393 
+        393
         394         self.obj = obj
-    
+
 
     /opt/conda/lib/python2.7/site-packages/pandas/core/groupby.pyc in _get_grouper(obj, key, axis, level, sort, mutated)
        2636                         sort=sort,
        2637                         in_axis=in_axis) \
     -> 2638             if not isinstance(gpr, Grouping) else gpr
-       2639 
+       2639
        2640         groupings.append(ping)
-    
+
 
     /opt/conda/lib/python2.7/site-packages/pandas/core/groupby.pyc in __init__(self, index, grouper, obj, name, level, sort, in_axis)
        2417                 if getattr(self.grouper, 'ndim', 1) != 1:
@@ -22495,21 +22494,21 @@ ds.to(hv.Curve, 'open')
     -> 2419                     raise ValueError("Grouper for '%s' not 1-dimensional" % t)
        2420                 self.grouper = self.index.map(self.grouper)
        2421                 if not (hasattr(self.grouper, "__len__") and
-    
+
 
     ValueError: Grouper for 'close' not 1-dimensional
 
 
 
 ```python
-#Remove index 
+#Remove index
 outg = outg.reset_index(drop=True)
 
 #Add the previously generated dataframe index to the final dataframe
 
 outg['date'] = dfsd1
 
-#View the final table 
+#View the final table
 
 outg
 ```
@@ -24099,55 +24098,55 @@ print outg.describe()
 ```
 
                  open                                                         \
-    ticker          A         AA        AAL        AAMC       AAN       AAOI   
-    count   21.000000  21.000000  21.000000   21.000000  21.00000  21.000000   
-    mean    71.753810  54.271905  54.763810  166.567502  40.92619  35.652381   
-    std      2.208258   1.319730   2.444354  233.518526   1.01858   1.897843   
-    min     67.420000  52.340000  52.330000   66.950000  39.16000  32.740000   
-    25%     70.680000  53.550000  52.790000   69.400000  39.98000  34.420000   
-    50%     72.020000  53.960000  53.650000   75.950000  41.19000  34.980000   
-    75%     73.770000  54.920000  57.740000   80.200000  41.80000  37.800000   
-    max     74.480000  57.050000  58.790000  724.662246  42.50000  38.900000   
-    
+    ticker          A         AA        AAL        AAMC       AAN       AAOI
+    count   21.000000  21.000000  21.000000   21.000000  21.00000  21.000000
+    mean    71.753810  54.271905  54.763810  166.567502  40.92619  35.652381
+    std      2.208258   1.319730   2.444354  233.518526   1.01858   1.897843
+    min     67.420000  52.340000  52.330000   66.950000  39.16000  32.740000
+    25%     70.680000  53.550000  52.790000   69.400000  39.98000  34.420000
+    50%     72.020000  53.960000  53.650000   75.950000  41.19000  34.980000
+    75%     73.770000  54.920000  57.740000   80.200000  41.80000  37.800000
+    max     74.480000  57.050000  58.790000  724.662246  42.50000  38.900000
+
                                                              ...      adj_close  \
-    ticker       AAON         AAP        AAPL        AAT     ...           CLVS   
-    count   21.000000   21.000000   21.000000  21.000000     ...      21.000000   
-    mean    36.652381  114.896190  174.020952  36.495714     ...      61.407619   
-    std      0.610425    5.812213    3.670836   0.890222     ...       3.657316   
-    min     36.000000  100.900000  165.525000  34.900000     ...      54.930000   
-    25%     36.200000  111.690000  172.530000  36.180000     ...      59.880000   
-    50%     36.300000  115.670000  174.505000  36.340000     ...      61.400000   
-    75%     36.950000  119.260000  177.250000  37.110000     ...      62.980000   
-    max     37.950000  123.520000  179.370000  38.300000     ...      67.720000   
-    
+    ticker       AAON         AAP        AAPL        AAT     ...           CLVS
+    count   21.000000   21.000000   21.000000  21.000000     ...      21.000000
+    mean    36.652381  114.896190  174.020952  36.495714     ...      61.407619
+    std      0.610425    5.812213    3.670836   0.890222     ...       3.657316
+    min     36.000000  100.900000  165.525000  34.900000     ...      54.930000
+    25%     36.200000  111.690000  172.530000  36.180000     ...      59.880000
+    50%     36.300000  115.670000  174.505000  36.340000     ...      61.400000
+    75%     36.950000  119.260000  177.250000  37.110000     ...      62.980000
+    max     37.950000  123.520000  179.370000  38.300000     ...      67.720000
+
                                                                                \
-    ticker        CLW         CLX        CMA        CMC       CMCO      CMCSA   
-    count   21.000000   21.000000  21.000000  21.000000  21.000000  21.000000   
-    mean    48.400000  143.665714  92.572857  24.820952  42.260952  41.827143   
-    std      1.343503    1.757668   3.212082   0.610393   1.144980   0.851758   
-    min     46.150000  140.960000  86.540000  22.770000  40.280000  40.410000   
-    25%     47.350000  142.250000  90.370000  24.590000  41.380000  41.070000   
-    50%     48.400000  143.520000  93.810000  24.900000  42.470000  41.980000   
-    75%     49.400000  144.990000  95.150000  25.160000  42.910000  42.500000   
-    max     50.300000  146.440000  95.810000  25.820000  44.420000  42.990000   
-    
-                                                
-    ticker         CME         CMG         CMI  
-    count    21.000000   21.000000   21.000000  
-    mean    152.259524  324.301905  210.572488  
-    std       2.699462   11.510498  117.866002  
-    min     144.790000  292.950000  177.060000  
-    25%     151.730000  319.370000  181.960000  
-    50%     152.810000  327.340000  183.900000  
-    75%     154.170000  330.230000  189.080000  
-    max     155.450000  343.870000  724.662246  
-    
+    ticker        CLW         CLX        CMA        CMC       CMCO      CMCSA
+    count   21.000000   21.000000  21.000000  21.000000  21.000000  21.000000
+    mean    48.400000  143.665714  92.572857  24.820952  42.260952  41.827143
+    std      1.343503    1.757668   3.212082   0.610393   1.144980   0.851758
+    min     46.150000  140.960000  86.540000  22.770000  40.280000  40.410000
+    25%     47.350000  142.250000  90.370000  24.590000  41.380000  41.070000
+    50%     48.400000  143.520000  93.810000  24.900000  42.470000  41.980000
+    75%     49.400000  144.990000  95.150000  25.160000  42.910000  42.500000
+    max     50.300000  146.440000  95.810000  25.820000  44.420000  42.990000
+
+
+    ticker         CME         CMG         CMI
+    count    21.000000   21.000000   21.000000
+    mean    152.259524  324.301905  210.572488
+    std       2.699462   11.510498  117.866002
+    min     144.790000  292.950000  177.060000
+    25%     151.730000  319.370000  181.960000
+    50%     152.810000  327.340000  183.900000
+    75%     154.170000  330.230000  189.080000
+    max     155.450000  343.870000  724.662246
+
     [8 rows x 1908 columns]
-    
+
 
 
 ```python
-outg.plot(x='date', y='close', figsize=(12, 7), kind='line') 
+outg.plot(x='date', y='close', figsize=(12, 7), kind='line')
 ```
 
 
@@ -24158,7 +24157,7 @@ outg.plot(x='date', y='close', figsize=(12, 7), kind='line')
 
 
 
-![png](output_103_1.png)
+![png](MILESTONE/images/output_103_1.png)
 
 
 
@@ -24171,7 +24170,7 @@ outg.set_index('date').query("Close Price").sort_values('Close Price', ascending
         Close Price
                   ^
     SyntaxError: invalid syntax
-    
+
 
 
 
